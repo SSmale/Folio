@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mobile Design</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+	<link rel="stylesheet" type="text/css" href="/inc/main.css">
+	<script type="text/javascript">
+		window.onload = function() {
+			document.getElementById("burger").onclick = function(){
+				document.getElementById("nav").classList.toggle("visible");
+				document.getElementById("burger").classList.toggle("open");
+				document.body.classList.toggle("noscroll");
+			};
+		}	
+	</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+</head>
+<body>
+	
+	<div class="site">
+		<div class="header">
+			<h1 class="heading">Simon's Mobile Site</h1>
+			<div id="nav" class="nav">
+				<ul class="navbar">
+					<li class="about"><a href="">About</a></li>
+					<li class="portfolio"><a href="">Portfolio</a></li>
+					<li class="blog"><a href="">Blog</a></li>
+					<li class="contact"><a href="">Contact Me</a></li>
+				</ul>
+			</div>
+			<div id="burger" class="burgerBox">
+				<span></span>
+			</div>
+		</div>
+		<div class="strapline">
+			<h3 class="subheading">Welcome to my portfolio, blog and overall landing page on the web.</h3>
+		</div>
+		<div class="main-content">
+			<h4 class="title">Hi I'm Simon</h4>
+			<p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<div class="CTA"><a href="">See More</a></div>
+			<h4 class="title">More about me</h4>
+			<p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+		<div class="footer">
+			<ul class="col1">
+				<li>Legal</li>
+				<li>Site Map</li>
+				<li>More Footer</li>
+				<li>More Footer</li>
+			</ul>
+			<p class="col2">Contact me: <a href="mailto:simon@smalemail.net">email</a> <br>
+			Address: 25 Some Street,<br>
+			Some Town,<br>
+			Some Area,<br>
+			SO3 0PO
+			</p>
+			<ul class="social">
+				<li class="facebook">
+					<a href="" class="social-facebook">
+						<i class="fa fa-facebook fa-lg"></i>
+                        <i class="fa fa-facebook-square fa-2x"></i>
+                    </a>
+                </li>
+				<li class="linkedin">
+					<a class="social-linkedin">
+						<i class="fa fa-linkedin fa-lg" aria-hidden="true"></i>
+						<i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
+					</a>
+				</li>
+				<li class="insta">
+					<a class="social-insta">
+						<i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+						<i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+					</a>
+				</li>
+				<li class="email">
+					<a class="social-email">
+						<i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i>
+						<i class="fa fa-paper-plane-o fa-lg" aria-hidden="true"></i>
+					</a>
+				</li>
+			</ul>
+			<p class="foot">Copyright SSmale 2017. All rights reserved</p>
+		</div>
+	</div>	
+</body>
+</html>
