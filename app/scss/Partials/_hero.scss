@@ -1,0 +1,65 @@
+.site{
+
+    .hero{
+
+        background: {
+            image: url('https://images.pexels.com/photos/248159/pexels-photo-248159.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb');
+            repeat: no-repeat;
+            size: cover;
+            position: 0% 45%;
+        }
+        min-height: 310px;
+
+        .body-tag{
+            position: absolute;
+            left: 10px;
+            top: 10px;
+        }
+
+        .avitar{
+           
+            height: 150px;
+            width: 150px;
+            position: relative;
+            top: 15px;
+            left: calc(50% - 75px);
+
+
+            img{
+                border-radius: 50%;
+                height: 100%;
+                width: 100%;
+                
+            }
+
+        }
+
+        .title{
+            
+            text-transform: uppercase;
+            border: grey 2px solid;
+            background-color: rgba($cta-colour,0.3);
+            text-align: center;
+            max-width: 250px;
+            margin: 7px auto;
+            position: relative;
+            top: 25px;
+            
+        }
+
+        .strapline{
+
+            text-transform: lowercase;
+            border: grey 2px solid;
+            padding: 10px 10px 5px;
+            background-color: rgba($cta-colour,0.3);
+            text-align: center;
+            max-width: 270px;
+            margin: 10px auto 10px;
+            position: relative;
+            top: 25px;
+        }
+
+    }
+
+}
