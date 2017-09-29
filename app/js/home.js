@@ -34,7 +34,8 @@ $("svg").click(function(){
   $('.site').removeClass('element');
   
   $('.open').removeClass('open');
-    
+  
+  $('.active').removeClass('active');
 });
 
 
