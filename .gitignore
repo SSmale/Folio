@@ -1,0 +1,12 @@
+
+.vscode/tasks.json
+.DS_Store
+app/.DS_Store
+app/images/Icon
+app/Icon
+app/css/.DS_Store
+app/css/Icon
+app/fonts/Icon
+app/js/Icon
+app/scss/Icon
+dist/Icon

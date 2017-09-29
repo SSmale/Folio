@@ -1,0 +1,23 @@
+body{
+    margin: 0;	
+    padding: 0;
+    color: white;
+    background-color: $other;
+    box-sizing: border-box;
+}
+h1{
+    letter-spacing: 0.1em;
+    font-family: $title-font;
+    font-size: 3em;
+}
+p,h3{
+    font-family: $p-font;
+    font-weight: 200;
+    font-size: 1em;
+}
+div{
+    //margin-bottom: -10px; ---for apple mobile devs. 
+}
+p{
+    padding: 0px 15px;
+}

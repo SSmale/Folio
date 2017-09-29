@@ -1,0 +1,190 @@
+/* Main SCSS File */
+body {
+  margin: 0;
+  padding: 0;
+  color: white;
+  background-color: #083d77;
+  box-sizing: border-box; }
+
+h1 {
+  letter-spacing: 0.1em;
+  font-family: Amatic SC, cursive;
+  font-size: 3em; }
+
+p, h3 {
+  font-family: Raleway, sans-serif;
+  font-weight: 200;
+  font-size: 1em; }
+
+p {
+  padding: 0px 15px; }
+
+.site {
+  position: absolute;
+  min-height: 100%;
+  min-width: 100%; }
+  .site #body-tag {
+    position: absolute;
+    left: 10px;
+    top: 10px; }
+  .site .hero {
+    min-height: 310px;
+    background-image: url("https://images.pexels.com/photos/248159/pexels-photo-248159.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 45%; }
+    .site .hero .avitar {
+      height: 150px;
+      width: 150px;
+      position: relative;
+      top: 15px;
+      left: calc(50% - 75px); }
+      .site .hero .avitar img {
+        border-radius: 50%;
+        height: 100%;
+        width: 100%;
+        box-shadow: 0px 14px 30px -11px #000; }
+    .site .hero .title {
+      text-transform: uppercase;
+      border: grey 2px solid;
+      background-color: rgba(231, 29, 54, 0.3);
+      text-align: center;
+      max-width: 250px;
+      margin: 7px auto;
+      position: relative;
+      top: 25px;
+      box-shadow: 0px 14px 30px -11px #000; }
+    .site .hero .strapline {
+      text-transform: lowercase;
+      border: grey 2px solid;
+      padding: 10px 10px 5px;
+      background-color: rgba(231, 29, 54, 0.3);
+      text-align: center;
+      max-width: 270px;
+      margin: 10px auto 10px;
+      position: relative;
+      top: 25px;
+      box-shadow: 0px 14px 30px -11px #000; }
+  .site #body-close {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    z-index: 0; }
+
+.home {
+  min-height: calc(100vh - 310px);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 5px;
+  background-color: #5e5d5f; }
+  .home .icon-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    z-index: 1; }
+    .home .icon-container .circle {
+      height: 90px;
+      width: 90px;
+      border-radius: 50%;
+      background-color: #e71d36;
+      position: relative;
+      top: calc(50% - 45px);
+      left: calc(50% - 45px);
+      transition: all 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+      box-shadow: 0px 14px 30px -11px #000; }
+      .home .icon-container .circle.active {
+        top: 0px;
+        left: 0px;
+        height: 100%;
+        width: 100%;
+        border-radius: 0%; }
+        .home .icon-container .circle.active ~ .name {
+          visibility: visible;
+          opacity: 1;
+          transition: all 0.5s ease-in-out; }
+        .home .icon-container .circle.active ~ .icon {
+          display: none; }
+    .home .icon-container .name {
+      visibility: hidden;
+      position: absolute;
+      text-align: center;
+      width: 100%;
+      top: calc(50% - 36px);
+      margin: 0;
+      opacity: 0; }
+    .home .icon-container .icon {
+      display: block;
+      position: absolute;
+      text-align: center;
+      width: 60px;
+      height: 60px;
+      top: calc(50% - 30px);
+      left: calc(50% - 30px); }
+
+.site .footer {
+  display: none; }
+
+.site .work, .site .school, .site .about, .site .contact {
+  display: none; }
+
+.site.element .hero, .site.element .home {
+  display: none; }
+
+.site.element .work.open, .site.element .school.open, .site.element .about.open, .site.element .contact.open {
+  display: block; }
+  .site.element .work.open .icon, .site.element .school.open .icon, .site.element .about.open .icon, .site.element .contact.open .icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 50px;
+    width: 50px;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: #0b55a7;
+    box-shadow: 0px 14px 30px -11px #000; }
+  .site.element .work.open .subtitle, .site.element .school.open .subtitle, .site.element .about.open .subtitle, .site.element .contact.open .subtitle {
+    text-align: center;
+    font-size: 1.2em;
+    padding: 5px 0px; }
+
+.site.element .footer {
+  display: block;
+  text-align: center; }
+  .site.element .footer svg {
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    box-shadow: 0px 0px 25px 1px #000;
+    border-top-left-radius: 50%;
+    background-color: rgba(8, 61, 119, 0.75);
+    padding: 5px; }
+    .site.element .footer svg:hover {
+      background-color: #083d77;
+      box-shadow: 0px 0px 40px 1px #000;
+      cursor: pointer; }
+    .site.element .footer svg path {
+      fill: white; }
+
+@media screen and (min-width: 1200px) {
+  .site {
+    display: grid;
+    background-color: orange;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-areas: " hero hero hero " " . . nav " " . content . "; }
+    .site .hero {
+      grid-area: hero; }
+    .site .home {
+      position: absolute;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 1fr;
+      min-height: 100px;
+      background: transparent;
+      right: 20px; }
+      .site .home .icon-container {
+        transform: scale(0.7); }
+        .site .home .icon-container .circle.active .name {
+          display: none; } }
