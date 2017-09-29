@@ -3,7 +3,9 @@
 <desc>Created using Figma</desc>
 <g id="Canvas" transform="translate(665 157)">
 <g id="Vector">
-<use xlink:href="#path0_fill" transform="translate(-664.23 -156.23)"/>
+<g id="Vector">
+<use xlink:href="#path0_fill" transform="translate(-664.23 -156.23)" fill="#FFFFFF"/>
+</g>
 </g>
 </g>
 <defs>
