@@ -134,7 +134,7 @@ p {
 
 .site.element .work.open, .site.element .school.open, .site.element .about.open, .site.element .contact.open {
   display: block; }
-  .site.element .work.open .icon, .site.element .school.open .icon, .site.element .about.open .icon, .site.element .contact.open .icon {
+  .site.element .work.open .icon-wrap, .site.element .school.open .icon-wrap, .site.element .about.open .icon-wrap, .site.element .contact.open .icon-wrap {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -144,6 +144,12 @@ p {
     border-radius: 50%;
     background-color: #0b55a7;
     box-shadow: 0px 14px 30px -11px #000; }
+    .site.element .work.open .icon-wrap .icon, .site.element .school.open .icon-wrap .icon, .site.element .about.open .icon-wrap .icon, .site.element .contact.open .icon-wrap .icon {
+      position: absolute;
+      height: 40px;
+      width: 40px;
+      top: calc(50% - 20px);
+      right: calc(50% - 20px); }
   .site.element .work.open .subtitle, .site.element .school.open .subtitle, .site.element .about.open .subtitle, .site.element .contact.open .subtitle {
     text-align: center;
     font-size: 1.2em;
@@ -152,7 +158,7 @@ p {
 .site.element .footer {
   display: block;
   text-align: center; }
-  .site.element .footer svg {
+  .site.element .footer .svg {
     height: 50px;
     width: 50px;
     position: fixed;
@@ -162,12 +168,30 @@ p {
     border-top-left-radius: 50%;
     background-color: rgba(8, 61, 119, 0.75);
     padding: 5px; }
-    .site.element .footer svg:hover {
+    .site.element .footer .svg:hover {
       background-color: #083d77;
       box-shadow: 0px 0px 40px 1px #000;
       cursor: pointer; }
-    .site.element .footer svg path {
+    .site.element .footer .svg path {
       fill: white; }
+
+.work .content .intro {
+  padding-top: 15px; }
+
+.work .content .projectName {
+  position: relative;
+  text-align: right;
+  padding-right: 10px;
+  width: 85%;
+  background-image: linear-gradient(120deg, #083d77, #ffa500);
+  background-size: 100% 2px;
+  background-repeat: no-repeat;
+  background-position: 0 89%; }
+
+.work .content .screenshot {
+  max-width: 90%;
+  position: relative;
+  left: 5%; }
 
 @media screen and (min-width: 1200px) {
   .site {
