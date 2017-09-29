@@ -1,6 +1,8 @@
 .site{
-
+    position: relative;
+    
     .hero{
+        min-height: 310px;
 
         background: {
             image: url('https://images.pexels.com/photos/248159/pexels-photo-248159.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb');
@@ -8,7 +10,6 @@
             size: cover;
             position: 0% 45%;
         }
-        min-height: 310px;
 
         .body-tag{
             position: absolute;
@@ -17,25 +18,22 @@
         }
 
         .avitar{
-           
             height: 150px;
             width: 150px;
             position: relative;
             top: 15px;
             left: calc(50% - 75px);
-
-
+        
             img{
                 border-radius: 50%;
                 height: 100%;
                 width: 100%;
-                
+                box-shadow: 0px 14px 30px -11px #000;  
             }
-
-        }
-
-        .title{
             
+        }
+        
+        .title{   
             text-transform: uppercase;
             border: grey 2px solid;
             background-color: rgba($cta-colour,0.3);
@@ -44,11 +42,10 @@
             margin: 7px auto;
             position: relative;
             top: 25px;
-            
+            box-shadow: 0px 14px 30px -11px #000;           
         }
-
-        .strapline{
-
+        
+        .strapline{           
             text-transform: lowercase;
             border: grey 2px solid;
             padding: 10px 10px 5px;
@@ -58,8 +55,16 @@
             margin: 10px auto 10px;
             position: relative;
             top: 25px;
+            box-shadow: 0px 14px 30px -11px #000;
         }
-
+        
     }
 
+    #body-close{
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        z-index: 0;
+    } 
+    
 }

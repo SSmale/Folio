@@ -1,0 +1,70 @@
+.home{
+    min-height: calc(100vh - 310px);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 5px;
+    background-color: lighten($text-colour, 5%);
+        
+    .icon-container{   
+        position: relative;
+        height: 100%;
+        width: 100%;
+        cursor: pointer;
+        z-index: 1;
+        
+        .circle{
+            height: 90px;
+            width: 90px;
+            border-radius: 50%;
+            background-color: rgba($cta-colour,5);
+            position: relative;
+            top: calc(50% - 45px);
+            left: calc(50% - 45px);
+            transition: all 0.3s $backwards;
+            box-shadow: 0px 14px 30px -11px #000;
+
+            &.active{
+                top: 0px;
+                left:0px;
+                height:  100%;
+                width: 100%;
+                border-radius: 0%;
+
+                &~.name{
+                    visibility: visible;
+                    opacity: 1; 
+                    transition: all 0.5s ease-in-out;
+                }
+
+                &~.icon{
+                    display: none;
+                }
+
+            }
+
+        }
+
+        .name{
+            visibility: hidden;
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            top:calc(50% - 36px);
+            margin: 0;
+            opacity: 0;       
+        }
+
+        .icon{
+            display: block;
+            position: absolute;
+            text-align: center;
+            width: 60px;
+            height: 60px;
+            top: calc(50% - 30px);
+            left: calc(50% - 30px);
+        }
+        
+    }
+    
+}

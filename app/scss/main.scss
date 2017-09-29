@@ -1,7 +1,15 @@
 /* Main SCSS File */
 
-// Base
+// Basics - Defines the global CSS
 @import "Basics/variables";
-
-// Components
 @import "Basics/scaffolding";
+
+// Pages - Defines Page level CSS
+
+// Partials - Defines element CSS
+
+@import "Partials/hero";
+@import "Partials/home";
+@import "Partials/heroAndHomeLaptop";
+
+// Tools - Defines Vendor CSS
