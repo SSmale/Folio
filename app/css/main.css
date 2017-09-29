@@ -1,8 +1,10 @@
 /* Main SCSS File */
 body {
-  margin: 0px;
+  margin: 0;
   padding: 0;
-  color: white; }
+  color: white;
+  background-color: #083d77;
+  box-sizing: border-box; }
 
 h1 {
   letter-spacing: 0.1em;
@@ -14,18 +16,23 @@ p, h3 {
   font-weight: 200;
   font-size: 1em; }
 
+p {
+  padding: 0px 15px; }
+
 .site {
-  position: relative; }
+  position: absolute;
+  min-height: 100%;
+  min-width: 100%; }
+  .site #body-tag {
+    position: absolute;
+    left: 10px;
+    top: 10px; }
   .site .hero {
     min-height: 310px;
     background-image: url("https://images.pexels.com/photos/248159/pexels-photo-248159.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0% 45%; }
-    .site .hero .body-tag {
-      position: absolute;
-      left: 10px;
-      top: 10px; }
     .site .hero .avitar {
       height: 150px;
       width: 150px;
@@ -116,11 +123,57 @@ p, h3 {
       top: calc(50% - 30px);
       left: calc(50% - 30px); }
 
+.site .footer {
+  display: none; }
+
+.site .work, .site .school, .site .about, .site .contact {
+  display: none; }
+
+.site.element .hero, .site.element .home {
+  display: none; }
+
+.site.element .work.open, .site.element .school.open, .site.element .about.open, .site.element .contact.open {
+  display: block; }
+  .site.element .work.open .icon, .site.element .school.open .icon, .site.element .about.open .icon, .site.element .contact.open .icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 50px;
+    width: 50px;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: #0b55a7;
+    box-shadow: 0px 14px 30px -11px #000; }
+  .site.element .work.open .subtitle, .site.element .school.open .subtitle, .site.element .about.open .subtitle, .site.element .contact.open .subtitle {
+    text-align: center;
+    font-size: 1.2em;
+    padding: 5px 0px; }
+
+.site.element .footer {
+  display: block;
+  text-align: center; }
+  .site.element .footer svg {
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    box-shadow: 0px 0px 25px 1px #000;
+    border-top-left-radius: 50%;
+    background-color: rgba(8, 61, 119, 0.75);
+    padding: 5px; }
+    .site.element .footer svg:hover {
+      background-color: #083d77;
+      box-shadow: 0px 0px 40px 1px #000;
+      cursor: pointer; }
+    .site.element .footer svg path {
+      fill: white; }
+
 @media screen and (min-width: 1200px) {
   .site {
     display: grid;
     background-color: orange;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 5fr 1fr;
     grid-template-areas: " hero hero hero " " . . nav " " . content . "; }
     .site .hero {
       grid-area: hero; }

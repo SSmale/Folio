@@ -1,7 +1,9 @@
 body{
-    margin: 0px;	
+    margin: 0;	
     padding: 0;
     color: white;
+    background-color: $other;
+    box-sizing: border-box;
 }
 h1{
     letter-spacing: 0.1em;
@@ -15,4 +17,7 @@ p,h3{
 }
 div{
     //margin-bottom: -10px; ---for apple mobile devs. 
+}
+p{
+    padding: 0px 15px;
 }

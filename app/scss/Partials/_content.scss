@@ -1,0 +1,71 @@
+.site{
+    
+    .footer{
+        display: none;
+    }
+    
+    .work, .school, .about, .contact{
+        display: none;
+        
+    }
+
+    &.element{
+    
+        .hero, .home{
+            display: none;
+        }
+
+        .work, .school, .about, .contact{
+
+            &.open{
+                display: block;
+
+                .icon{
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
+                    height: 50px;
+                    width: 50px;
+                    padding: 5px;
+                    border-radius: 50%;
+                    background-color: lighten($other,10%);
+                    box-shadow: $bs;
+
+                }
+                .subtitle{
+                    text-align: center;
+                    font-size: 1.2em;
+                    padding: 5px 0px;
+                }
+            }
+        }
+    
+        .footer{
+            display: block;
+            text-align: center;
+
+            svg{
+                height: 50px;
+                width: 50px;
+                position: fixed;
+                bottom: 0px;
+                right: 0px;
+                box-shadow: 0px 0px 25px 1px #000;
+                border-top-left-radius: 50%;
+                background-color: rgba($other, 0.75);
+                padding: 5px;
+
+                &:hover{
+                    background-color: $other;
+                    box-shadow: 0px 0px 40px 1px #000;
+                    cursor: pointer;
+                }
+
+                path{
+                    fill: white;
+                }
+            }
+        }
+
+    }
+}
