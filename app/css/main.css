@@ -173,7 +173,7 @@ p {
   .site {
     display: grid;
     background-color: orange;
-    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-areas: " hero hero hero " " . . nav " " . content . "; }
     .site .hero {
       grid-area: hero; }
