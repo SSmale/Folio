@@ -20,7 +20,7 @@
             &.open{
                 display: block;
 
-                .icon{
+                .icon-wrap{
                     position: absolute;
                     top: 10px;
                     right: 10px;
@@ -30,7 +30,15 @@
                     border-radius: 50%;
                     background-color: lighten($other,10%);
                     box-shadow: $bs;
+                    
+                    .icon{
+                        position: absolute;
+                        height: 40px;
+                        width: 40px;
+                        top: calc(50% - 20px);
+                        right: calc(50% - 20px);
 
+                    }
                 }
                 .subtitle{
                     text-align: center;
@@ -44,7 +52,7 @@
             display: block;
             text-align: center;
 
-            svg{
+            .svg{
                 height: 50px;
                 width: 50px;
                 position: fixed;
