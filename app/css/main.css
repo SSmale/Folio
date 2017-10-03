@@ -4,6 +4,7 @@ body {
   padding: 0;
   color: white;
   background-color: #083d77;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
 h1 {
@@ -43,6 +44,7 @@ p {
         border-radius: 50%;
         height: 100%;
         width: 100%;
+        -webkit-box-shadow: 0px 14px 30px -11px #000;
         box-shadow: 0px 14px 30px -11px #000; }
     .site .hero .title {
       text-transform: uppercase;
@@ -53,6 +55,7 @@ p {
       margin: 7px auto;
       position: relative;
       top: 25px;
+      -webkit-box-shadow: 0px 14px 30px -11px #000;
       box-shadow: 0px 14px 30px -11px #000; }
     .site .hero .strapline {
       text-transform: lowercase;
@@ -64,6 +67,7 @@ p {
       margin: 10px auto 10px;
       position: relative;
       top: 25px;
+      -webkit-box-shadow: 0px 14px 30px -11px #000;
       box-shadow: 0px 14px 30px -11px #000; }
   .site #body-close {
     position: absolute;
@@ -92,7 +96,9 @@ p {
       position: relative;
       top: calc(50% - 45px);
       left: calc(50% - 45px);
+      -webkit-transition: all 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
       transition: all 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+      -webkit-box-shadow: 0px 14px 30px -11px #000;
       box-shadow: 0px 14px 30px -11px #000; }
       .home .icon-container .circle.active {
         top: 0px;
@@ -103,6 +109,7 @@ p {
         .home .icon-container .circle.active ~ .name {
           visibility: visible;
           opacity: 1;
+          -webkit-transition: all 0.5s ease-in-out;
           transition: all 0.5s ease-in-out; }
         .home .icon-container .circle.active ~ .icon {
           display: none; }
@@ -143,6 +150,7 @@ p {
     padding: 5px;
     border-radius: 50%;
     background-color: #0b55a7;
+    -webkit-box-shadow: 0px 14px 30px -11px #000;
     box-shadow: 0px 14px 30px -11px #000; }
     .site.element .work.open .icon-wrap .icon, .site.element .school.open .icon-wrap .icon, .site.element .about.open .icon-wrap .icon, .site.element .contact.open .icon-wrap .icon {
       position: absolute;
@@ -157,28 +165,31 @@ p {
 
 .site.element .footer {
   display: block;
-  text-align: center; }
+  text-align: center;
+  position: relative; }
   .site.element .footer .svg {
     height: 50px;
     width: 50px;
     position: fixed;
     bottom: 0px;
     right: 0px;
+    -webkit-box-shadow: 0px 0px 25px 1px #000;
     box-shadow: 0px 0px 25px 1px #000;
     border-top-left-radius: 50%;
     background-color: rgba(8, 61, 119, 0.75);
     padding: 5px; }
     .site.element .footer .svg:hover {
       background-color: #083d77;
+      -webkit-box-shadow: 0px 0px 40px 1px #000;
       box-shadow: 0px 0px 40px 1px #000;
       cursor: pointer; }
     .site.element .footer .svg path {
       fill: white; }
 
-.work .content .intro {
+.work .intro {
   padding-top: 15px; }
 
-.work .content .projectName {
+.work .content .project-container .projectName {
   position: relative;
   text-align: right;
   padding-right: 10px;
@@ -188,10 +199,40 @@ p {
   background-repeat: no-repeat;
   background-position: 0 89%; }
 
-.work .content .screenshot {
+.work .content .project-container .screenshot {
   max-width: 90%;
   position: relative;
   left: 5%; }
+
+@media screen and (min-width: 768px) {
+  .work .intro {
+    padding-bottom: 30px; }
+  .work .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: " . . " "feature feature" " . . ";
+    grid-gap: 5px;
+    padding: 5px; }
+    .work .content .project-container {
+      position: relative; }
+      .work .content .project-container .projectName {
+        display: none; }
+      .work .content .project-container .screenshot {
+        max-width: 100%;
+        left: 0; }
+      .work .content .project-container .writeup {
+        display: none; }
+      .work .content .project-container.feature {
+        grid-area: feature; }
+        .work .content .project-container.feature .projectName {
+          display: block;
+          font-size: 1.3em;
+          font-weight: 700; }
+        .work .content .project-container.feature .screenshot {
+          max-width: 700px;
+          left: calc(50% - 350px); }
+        .work .content .project-container.feature .writeup {
+          display: block; } }
 
 @media screen and (min-width: 1200px) {
   .site {
@@ -209,6 +250,9 @@ p {
       background: transparent;
       right: 20px; }
       .site .home .icon-container {
+        -webkit-transform: scale(0.7);
         transform: scale(0.7); }
         .site .home .icon-container .circle.active .name {
           display: none; } }
+
+/*# sourceMappingURL=main.css.map */
