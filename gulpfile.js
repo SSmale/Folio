@@ -1,4 +1,4 @@
-var browserSync = require('browser-sync')
+var browserSync = require('browser-sync');  
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var useref = require('gulp-useref');
@@ -8,7 +8,7 @@ var cssnano = require('gulp-cssnano');
 var del = require('del');
 var postcss      = require('gulp-postcss');
 var sourcemaps   = require('gulp-sourcemaps');
-var autoprefixer = require('autoprefixer');
+var autoprefixer = require('gulp-autoprefixer');
 var runSequence = require('run-sequence');
 
 
@@ -25,13 +25,28 @@ gulp.task('browserSync', function() {
 });
 
 //SASS to CSS
+// gulp.task('sass', function() {
+//     gulp.src('app/scss/**/*.scss')
+//         .pipe(sass()) // Converts Sass to CSS with gulp-sass
+//         .pipe( gulp.dest('app/css') )
+//         .pipe(browserSync.reload({
+//             stream: true
+//         }));
+// });
+
 gulp.task('sass', function() {
-    return gulp.src('app/scss/**/*.scss')
-        .pipe(sass()) // Converts Sass to CSS with gulp-sass
-        .pipe(gulp.dest('app/css'))
-        .pipe(browserSync.reload({
-            stream: true
-        }))
+   return gulp.src('app/scss/**/*.scss')
+       .pipe(sourcemaps.init())
+       .pipe(sass()) // Converts Sass to CSS with gulp-sass
+       .pipe(autoprefixer({
+             browsers: ['last 2 versions'],
+             cascade: false
+         }))
+       .pipe(sourcemaps.write('.'))
+       .pipe(gulp.dest('app/css'))
+       .pipe(browserSync.reload({
+           stream: true
+       }))
 });
 
 // Gulp watch
@@ -58,30 +73,38 @@ gulp.task('fonts', function() {
   .pipe(gulp.dest('dist/fonts'))
 });
 
+gulp.task('images', function() {
+  return gulp.src('app/images/**/*')
+  .pipe(gulp.dest('dist/images'))
+});
+
 gulp.task('clean:dist', function() {
   return del.sync('dist');
 });
 
-//gulp.task('autoprefixer', function () {
-//
-//    return gulp.src('./src/*.css')
-//        .pipe(sourcemaps.init())
-//        .pipe(postcss([ autoprefixer() ]))
-//        .pipe(sourcemaps.write('.'))
-//        .pipe(gulp.dest('./dest'));
-//});
+// gulp.task('autoprefix', function () {
+//   return gulp.src('app/css')
+//     .pipe(sourcemaps.init())
+//     .pipe(postcss([ autoprefixer(
+//       {
+//         browsers: ['last 2 versions'],
+//         cascade: false
+//       }) ]))
+//     .pipe(sourcemaps.write('.'))
+//     .pipe(gulp.dest('.'));
+// });  'autoprefix',
 
 //Gulp tasks
 
 gulp.task('build', function (callback) {
   runSequence('clean:dist', 
-    ['sass', 'useref', 'fonts'],
+    ['sass', 'useref', 'fonts', 'images'],
     callback
   )
 });
 
 gulp.task('default', function (callback) {
-  runSequence(['sass','browserSync'], 'watch',
+  runSequence(['sass', 'browserSync'], 'watch',
     callback
   )
 });
