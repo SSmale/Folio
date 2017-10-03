@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0; user-scalable=0;">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>SSmale Portfolio</title>
+    <!--build:css css/main.min.css-->
     <link rel="stylesheet" href="css/main.css">
+    <!-- endbuild -->
     <link href="https://fonts.googleapis.com/css?family=Raleway|Amatic+SC" rel="stylesheet"> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
-    <div class="site element">
-        <img id="body-tag" src="Icons/icon-body.svg" alt="" class="icon">                
+    <div class="site">
+        <img id="body-tag" src="images/Icons/icon-body.svg" alt="" class="icon">                
         <div class="hero">
             <div class="avitar">
                 <img src="images/avitar.jpg" alt="Simon Smale Avitar Imaage">
@@ -23,51 +25,61 @@
             <div data-area="work" class="icon-container">
                 <div class="circle"></div>
                 <h1 class="name">Work</h1>
-                <img class="icon" src="Icons/icon-code.svg" >    
+                <img class="icon" src="images/Icons/icon-code.svg" >    
             </div>  
             <div data-area="school" class="icon-container">      
                 <div class="circle"></div>
                 <h1 class="name">School</h1>
-                <img class="icon" src="Icons/icon-grad.svg" >            
+                <img class="icon" src="images/Icons/icon-grad.svg" >            
             </div>
             <div data-area="about" class="icon-container">
                 <div class="circle"></div>
                 <h1 class="name">About Me</h1>
-                <img class="icon" src="Icons/icon-person.svg" >            
+                <img class="icon" src="images/Icons/icon-person.svg" >            
             </div>
             <div data-area="contact" class="icon-container">
                 <div class="circle"></div>
                 <h1 class="name">Contact</h1>
-                <img class="icon" src="Icons/icon-at.svg" >            
+                <img class="icon" src="images/Icons/icon-at.svg" >            
             </div>
         </div>
-        <div class="work open">
+        <div class="work">
             <div class="icon-wrap">
-                <img class="icon" src="Icons/icon-code.svg" >
+                <img class="icon" src="images/Icons/icon-code.svg" >
             </div> 
             <h3 class="subtitle">Work</h3>
+            <p class="intro">Here is a collection of projects that I have completed during my time at university. These projects were devloped to practice both front and back end dev, as well as some designing</p>
             <div class="content">
-                <p class="intro">Here is a collection of projects that I have completed during my time at university. These projects were devloped to practice both front and back end dev, as well as some designing</p>
-                <h3 class="projectName">Web Programming</h3>
-                <img src="images/projects/SOSA.png" alt="SOSA" class="screenshot">
-                <p class="writeup">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis sunt pariatur nostrum deserunt cupiditate accusantium repudiandae sapiente temporibus explicabo ullam, reprehenderit laborum corporis laboriosam optio tenetur fugit corrupti ex? Deserunt asperiores adipisci ad laudantium ab. Fugit harum eos fuga quibusdam deleniti non nulla omnis blanditiis odio expedita, corporis voluptates eveniet!</p>
-                <h3 class="projectName">Xplore the Forest</h3>
-                <img src="images/projects/Xplore.png" alt="Xplore the Forest" class="screenshot">
-                <p class="writeup">Cum quo et, minus enim facilis id architecto officiis dolore ducimus in laboriosam dignissimos tenetur vel debitis obcaecati voluptatem accusamus modi. Illo fuga magnam exercitationem quam harum, commodi autem ut velit minus illum aspernatur provident maxime quisquam consequatur fugiat rerum? Tempore consequuntur voluptate deleniti dolores. Id necessitatibus odio quo. Labore!</p>
-                <h3 class="projectName">Computing in Business</h3>
-                <img src="images/projects/CiB.png" alt="Computing in Business" class="screenshot">
-                <p class="writeup">Sint minus id ipsum quasi earum placeat neque ducimus enim voluptatem, libero maiores aliquid suscipit commodi animi consequatur, amet nemo! Consequuntur soluta ad, nisi rem, sit eius corporis, iste maiores qui iusto omnis corrupti molestiae sint. Ipsam rem nulla, fuga similique debitis enim voluptates nesciunt assumenda eveniet beatae? Sunt, totam.</p>
-                <h3 class="projectName">Jims Gym</h3>
-                <img src="images/projects/JimsGym.png" alt="Jims Gym" class="screenshot">
-                <p class="writeup">Maxime suscipit sapiente cupiditate nam magni quis explicabo natus tempore sequi nulla corrupti iste dolor ullam harum excepturi alias dicta culpa voluptatibus vel, fugiat error laudantium odio ducimus! Tenetur, placeat eum cupiditate quidem excepturi odit atque voluptatum pariatur ipsam. Numquam suscipit non deserunt reiciendis vitae ut saepe, nihil voluptatum adipisci.</p>
-                <h3 class="projectName">Larry Ullman PHP books</h3>
-                <img src="images/projects/php.png" alt="php" class="screenshot">
-                <p class="writeup">Consequatur, a cupiditate? Delectus inventore laborum ut, consequuntur explicabo cupiditate numquam dolores voluptatum nostrum omnis quod modi sint tempora aut quaerat eveniet quas adipisci consectetur obcaecati ipsam suscipit. Veritatis blanditiis odio non, possimus, quis vitae esse maiores sunt perferendis corrupti dolorem quae laboriosam numquam delectus alias, labore earum ipsam nisi.</p>
-            </div>   
+                <div class="project-container feature" id="project1">
+                    <h3 class="projectName">Web Programming</h3>
+                    <img src="images/projects/SOSA.png" alt="SOSA" class="screenshot">
+                    <p class="writeup">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis sunt pariatur nostrum deserunt cupiditate accusantium repudiandae sapiente temporibus explicabo ullam, reprehenderit laborum corporis laboriosam optio tenetur fugit corrupti ex? Deserunt asperiores adipisci ad laudantium ab. Fugit harum eos fuga quibusdam deleniti non nulla omnis blanditiis odio expedita, corporis voluptates eveniet!</p>
+                </div>
+                <div class="project-container" id="project2">
+                    <h3 class="projectName">Xplore the Forest</h3>
+                    <img src="images/projects/Xplore.png" alt="Xplore the Forest" class="screenshot">
+                    <p class="writeup">Cum quo et, minus enim facilis id architecto officiis dolore ducimus in laboriosam dignissimos tenetur vel debitis obcaecati voluptatem accusamus modi. Illo fuga magnam exercitationem quam harum, commodi autem ut velit minus illum aspernatur provident maxime quisquam consequatur fugiat rerum? Tempore consequuntur voluptate deleniti dolores. Id necessitatibus odio quo. Labore!</p>
+                </div>
+                <div class="project-container" id="project3">
+                    <h3 class="projectName">Computing in Business</h3>
+                    <img src="images/projects/CiB.png" alt="Computing in Business" class="screenshot">
+                    <p class="writeup">Sint minus id ipsum quasi earum placeat neque ducimus enim voluptatem, libero maiores aliquid suscipit commodi animi consequatur, amet nemo! Consequuntur soluta ad, nisi rem, sit eius corporis, iste maiores qui iusto omnis corrupti molestiae sint. Ipsam rem nulla, fuga similique debitis enim voluptates nesciunt assumenda eveniet beatae? Sunt, totam.</p>
+                </div>    
+                <div class="project-container" id="project4">
+                    <h3 class="projectName">Jims Gym</h3>
+                    <img src="images/projects/JimsGym.png" alt="Jims Gym" class="screenshot">
+                    <p class="writeup">Maxime suscipit sapiente cupiditate nam magni quis explicabo natus tempore sequi nulla corrupti iste dolor ullam harum excepturi alias dicta culpa voluptatibus vel, fugiat error laudantium odio ducimus! Tenetur, placeat eum cupiditate quidem excepturi odit atque voluptatum pariatur ipsam. Numquam suscipit non deserunt reiciendis vitae ut saepe, nihil voluptatum adipisci.</p>
+                </div>
+                <div class="project-container" id="project5">  
+                    <h3 class="projectName">Larry Ullman PHP books</h3>
+                    <img src="images/projects/php.png" alt="php" class="screenshot">
+                    <p class="writeup">Consequatur, a cupiditate? Delectus inventore laborum ut, consequuntur explicabo cupiditate numquam dolores voluptatum nostrum omnis quod modi sint tempora aut quaerat eveniet quas adipisci consectetur obcaecati ipsam suscipit. Veritatis blanditiis odio non, possimus, quis vitae esse maiores sunt perferendis corrupti dolorem quae laboriosam numquam delectus alias, labore earum ipsam nisi.</p>
+                </div> 
+            </div>
         </div>
         <div class="school">
             <div class="icon-wrap">
-                <img class="icon" src="Icons/icon-grad.svg" >
+                <img class="icon" src="images/Icons/icon-grad.svg" >
             </div> 
             <h3 class="subtitle">School</h3>
             <div class="content">
@@ -78,7 +90,7 @@
          </div>  
         <div class="about">
             <div class="icon-wrap">
-                <img class="icon" src="Icons/icon-person.svg" >
+                <img class="icon" src="images/Icons/icon-person.svg" >
             </div> 
             <h3 class="subtitle">About Me</h3>
             <div class="content">
@@ -89,7 +101,7 @@
             </div>
         <div class="contact">
             <div class="icon-wrap">
-                <img class="icon" src="Icons/icon-at.svg" >
+                <img class="icon" src="images/Icons/icon-at.svg" >
             </div> 
             <h3 class="subtitle">Contact Me</h3>
             <div class="content">
@@ -106,8 +118,10 @@
             </div>
             <p class="copy">| SSmale &copy2017 |</p>
         </div>
-        <img id="body-close" src="Icons/icon-body-close.svg" alt="">
+        <img id="body-close" src="images/Icons/icon-body-close.svg" alt="">
     </div>
+    <!--build:js js/main.min.js -->
     <script src="js/home.js"></script>
+    <!-- endbuild -->
 </body>
 </html>
