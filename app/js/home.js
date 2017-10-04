@@ -8,7 +8,7 @@ $(function(){
     
     if (window.matchMedia('(max-width: 1200px)').matches)
     {
-
+      
       if ($this.children().hasClass('active')) {
         //$this.find(".circle").toggleClass('active');
         
@@ -25,7 +25,21 @@ $(function(){
   });
 });   
 
-
+$('.project-container').click(function(){
+  
+  // if($(this).hasClass('feature')){
+    //   $(this).toggleClass('feature');
+    // } else{
+      
+      // }
+      
+      $(".feature").removeClass('feature');
+      $(this).toggleClass('feature');
+      if ((window.matchMedia('(min-width: 768px)').matches) && (window.matchMedia('(max-width: 1200px)').matches))
+      {
+        scroll($('.feature')); 
+      }
+});
 
 $("svg").click(function(){
   
@@ -47,4 +61,8 @@ function loadElement($tbl){
 
   $('.'+$tbl).addClass('open');
 
+}
+
+function scroll(scrollTo){
+  $('html,body').animate({scrollTop: scrollTo.offset().top},'slow');
 }
