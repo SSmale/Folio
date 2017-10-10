@@ -51,8 +51,10 @@
         .footer{
             display: block;
             text-align: center;
-            position: relative;
-
+            width: 100%;
+            position: absolute;
+            bottom: -30px;
+           
             .svg{
                 height: 50px;
                 width: 50px;

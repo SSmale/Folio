@@ -68,5 +68,11 @@
         left: 10px;
         z-index: 0;
     } 
+
+    &.element{
+        #body-close{
+            bottom: -20px;
+        }
+    }
     
 }
