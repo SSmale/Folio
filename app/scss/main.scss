@@ -3,11 +3,8 @@
 // Basics - Defines the global CSS
 @import "Basics/variables";
 @import "Basics/scaffolding";
-
 // Pages - Defines Page level CSS
-
 // Partials - Defines element CSS
-
 @import "Partials/hero";
 @import "Partials/home";
 @import "Partials/content";
@@ -16,5 +13,4 @@
 @import "Partials/heroAndHomeLaptop";
 @import "Partials/educationMobile";
 @import "Partials/educationTablet";
-
 // Tools - Defines Vendor CSS

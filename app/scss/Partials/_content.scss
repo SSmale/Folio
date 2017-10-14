@@ -1,26 +1,25 @@
-.site{
-    
-    .footer{
+.site {
+    .footer {
         display: none;
     }
-    
-    .work, .school, .about, .contact{
+    .work,
+    .school,
+    .about,
+    .contact {
         display: none;
-        
     }
-
-    &.element{
-    
-        .hero, .home{
+    &.element {
+        .hero,
+        .home {
             display: none;
         }
-
-        .work, .school, .about, .contact{
-
-            &.open{
+        .work,
+        .school,
+        .about,
+        .contact {
+            &.open {
                 display: block;
-
-                .icon-wrap{
+                .icon-wrap {
                     position: absolute;
                     top: 10px;
                     right: 10px;
@@ -28,34 +27,30 @@
                     width: 50px;
                     padding: 5px;
                     border-radius: 50%;
-                    background-color: lighten($other,10%);
+                    background-color: lighten($other, 10%);
                     box-shadow: $bs;
-                    
-                    .icon{
+                    .icon {
                         position: absolute;
                         height: 40px;
                         width: 40px;
                         top: calc(50% - 20px);
                         right: calc(50% - 20px);
-
                     }
                 }
-                .subtitle{
+                .subtitle {
                     text-align: center;
                     font-size: 1.2em;
                     padding: 5px 0px;
                 }
             }
         }
-    
-        .footer{
+        .footer {
             display: block;
             text-align: center;
             width: 100%;
             position: absolute;
             bottom: -30px;
-           
-            .svg{
+            .svg {
                 height: 50px;
                 width: 50px;
                 position: fixed;
@@ -65,18 +60,15 @@
                 border-top-left-radius: 50%;
                 background-color: rgba($other, 0.75);
                 padding: 5px;
-
-                &:hover{
+                &:hover {
                     background-color: $other;
                     box-shadow: 0px 0px 40px 1px #000;
                     cursor: pointer;
                 }
-
-                path{
+                path {
                     fill: white;
                 }
             }
         }
-
     }
 }

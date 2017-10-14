@@ -1,37 +1,27 @@
 @media screen and (min-width:1200px) {
-    .site{
+    .site {
         display: grid;
         background-color: orange;
         grid-template-columns: repeat(3, 1fr);
-
-        grid-template-areas: 
-        " hero hero hero "
-        " . . nav "
-        " . content . ";
-
-        .hero{
+        grid-template-areas: " hero hero hero " " . . nav " " . content . ";
+        .hero {
             grid-area: hero;
         }
-
-        .home{
+        .home {
             position: absolute;
             grid-template-columns: repeat(4, 1fr);
             grid-template-rows: 1fr;
             min-height: 100px;
             background: transparent;
             right: 20px;
-
-            .icon-container{
+            .icon-container {
                 transform: scale(0.7);
-
-                .circle{
-                    
-                    &.active .name{
+                .circle {
+                    &.active .name {
                         display: none;
                     }
-
                 }
-           }
-        }   
+            }
+        }
     }
 }

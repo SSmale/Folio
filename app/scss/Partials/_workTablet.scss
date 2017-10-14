@@ -1,67 +1,43 @@
-@media screen and (min-width: 768px){
-
-    .work{
-        .intro{
+@media screen and (min-width: 768px) {
+    .work {
+        .intro {
             padding-bottom: 30px;
         }
-
-        .content{
+        .content {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            // grid-template-rows: 1fr 1fr 1fr;
-            grid-template-areas: 
-            " . . "
-            "feature feature"
-            " . . ";
+            grid-template-columns: 1fr 1fr; // grid-template-rows: 1fr 1fr 1fr;
+            grid-template-areas: " . . " "feature feature" " . . ";
             grid-gap: 5px;
             padding: 5px;
-
-            .project-container{
+            .project-container {
                 position: relative;
-
-                .projectName{
+                .projectName {
                     display: none;
-                    
                 }
-                
-                .screenshot{
+                .screenshot {
                     max-width: 100%;
-                    left: 0; 
-                    
+                    left: 0;
                 }
-                
-                .writeup{
+                .writeup {
                     display: none;
-                    
                 }
-                
-                
-                &.feature{
-                    grid-area: feature;
-                    // grid-row: span 2/2;
+                &.feature {
+                    grid-area: feature; // grid-row: span 2/2;
                     // grid-column: span 2;
-
-                    .projectName{
+                    .projectName {
                         display: block;
                         font-size: 1.3em;
                         font-weight: 700;
-                        
                     }
-                    .screenshot{
+                    .screenshot {
                         max-width: 700px;
                         left: calc(50% - 350px);
                     }
-                                        
-                    .writeup{
+                    .writeup {
                         display: block;
-                        
                     }
                 }
             }
-            
-
         }
-
     }
-    
 }

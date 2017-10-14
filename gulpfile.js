@@ -2,7 +2,7 @@
 // Define Variables //
 //------------------//
 
-var browserSync = require('browser-sync');  
+var browserSync = require('browser-sync');
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var useref = require('gulp-useref');
@@ -20,42 +20,42 @@ var runSequence = require('run-sequence');
 //-------------------//
 
 // Start browserSync server
-gulp.task('browserSync', function() {
+gulp.task('browserSync', function () {
   browserSync.init({
-      server: {
-          baseDir: "app"
-      }
-      // Tunnel has some issues currently
-      //, tunnel: "ssmale" 
+    server: {
+      baseDir: "app"
+    }
+    // Tunnel has some issues currently
+    //, tunnel: "ssmale" 
   });
 });
 
 // Converts SCSS to CSS, Prefixes for the last two browser vesions and provides source maps to assit in debugging
-gulp.task('sass', function() {
-   return gulp.src('app/scss/**/*.scss')
-       .pipe(sourcemaps.init())
-       .pipe(sass().on('error', function(err) {
-          console.error(err.message);
-          browserSync.notify(err.message, 30000); // Display error in the browser
-          this.emit('end'); // Prevent gulp from catching the error and exiting the watch process
-        })) // Converts Sass to CSS with gulp-sass
-       .pipe(autoprefixer({
-             browsers: ['last 2 versions'],
-             cascade: false
-         }))
-       .pipe(sourcemaps.write('.'))
-       .pipe(gulp.dest('app/css'))
-       .pipe(browserSync.reload({
-           stream: true
-       }))
+gulp.task('sass', function () {
+  return gulp.src('app/scss/**/*.scss')
+    .pipe(sourcemaps.init())
+    .pipe(sass().on('error', function (err) {
+      console.error(err.message);
+      browserSync.notify(err.message, 30000); // Display error in the browser
+      this.emit('end'); // Prevent gulp from catching the error and exiting the watch process
+    })) // Converts Sass to CSS with gulp-sass
+    .pipe(autoprefixer({
+      browsers: ['last 2 versions'],
+      cascade: false
+    }))
+    .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest('app/css'))
+    .pipe(browserSync.reload({
+      stream: true
+    }))
 });
 
 // Gulp watch
-gulp.task('watch', ['sass'], function (){
-  gulp.watch('app/scss/**/*.scss', ['sass']); 
+gulp.task('watch', ['sass'], function () {
+  gulp.watch('app/scss/**/*.scss', ['sass']);
   // Reloads the browser whenever HTML or JS files change
-  gulp.watch('app/*.html', browserSync.reload); 
-  gulp.watch('app/js/**/*.js', browserSync.reload); 
+  gulp.watch('app/*.html', browserSync.reload);
+  gulp.watch('app/js/**/*.js', browserSync.reload);
 })
 
 //------------------//
@@ -63,7 +63,7 @@ gulp.task('watch', ['sass'], function (){
 //------------------//
 
 // Minifies the JS and CSS files
-gulp.task('useref', function(){
+gulp.task('useref', function () {
   return gulp.src('app/*.html')
     .pipe(useref())
     // Minifies only if it's a JavaScript file
@@ -74,19 +74,19 @@ gulp.task('useref', function(){
 });
 
 // Moves custom fonts to the production folder
-gulp.task('fonts', function() {
+gulp.task('fonts', function () {
   return gulp.src('app/fonts/**/*')
-  .pipe(gulp.dest('dist/fonts'))
+    .pipe(gulp.dest('dist/fonts'))
 });
 
 // Moves images to the production folder
-gulp.task('images', function() {
+gulp.task('images', function () {
   return gulp.src('app/images/**/*')
-  .pipe(gulp.dest('dist/images'))
+    .pipe(gulp.dest('dist/images'))
 });
 
 // Deletes the production folder to remove deprecated files
-gulp.task('clean:dist', function() {
+gulp.task('clean:dist', function () {
   return del.sync('dist');
 });
 
@@ -95,8 +95,7 @@ gulp.task('clean:dist', function() {
 //------------------//
 
 gulp.task('build', function (callback) {
-  runSequence('clean:dist', 
-    ['sass', 'useref', 'fonts', 'images'],
+  runSequence('clean:dist', ['sass', 'useref', 'fonts', 'images'],
     callback
   )
 });
