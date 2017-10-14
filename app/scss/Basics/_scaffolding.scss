@@ -15,6 +15,14 @@ p,h3{
     font-weight: 200;
     font-size: 1em;
 }
+span{
+    font-family: $p-font;
+    font-weight: 200;
+    font-size: 0.70em;
+}
+h6{
+    font-family: $p-font;    
+}
 div{
     //margin-bottom: -10px; ---for apple mobile devs. 
 }

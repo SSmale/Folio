@@ -17,6 +17,14 @@ p, h3 {
   font-weight: 200;
   font-size: 1em; }
 
+span {
+  font-family: Raleway, sans-serif;
+  font-weight: 200;
+  font-size: 0.70em; }
+
+h6 {
+  font-family: Raleway, sans-serif; }
+
 p {
   padding: 0px 15px; }
 
@@ -74,6 +82,8 @@ p {
     bottom: 10px;
     left: 10px;
     z-index: 0; }
+  .site.element #body-close {
+    bottom: -20px; }
 
 .home {
   min-height: calc(100vh - 310px);
@@ -166,7 +176,9 @@ p {
 .site.element .footer {
   display: block;
   text-align: center;
-  position: relative; }
+  width: 100%;
+  position: absolute;
+  bottom: -30px; }
   .site.element .footer .svg {
     height: 50px;
     width: 50px;
@@ -254,5 +266,102 @@ p {
         transform: scale(0.7); }
         .site .home .icon-container .circle.active .name {
           display: none; } }
+
+.content {
+  padding: 0px 10px;
+  margin: auto; }
+  .content .institute {
+    position: relative;
+    height: 85px; }
+    .content .institute .logo {
+      width: 80px; }
+    .content .institute .course {
+      width: 200px;
+      position: absolute;
+      top: 0px;
+      right: 10px;
+      text-align: right; }
+    .content .institute .year {
+      position: relative;
+      top: -50px;
+      width: 100%;
+      text-align: right;
+      right: 10px; }
+    .content .institute .grade {
+      border-radius: 50%;
+      background-color: gold;
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      top: -10px;
+      left: 65px; }
+      .content .institute .grade h4 {
+        text-align: center;
+        height: 40px;
+        width: 40px;
+        position: relative;
+        top: -12px; }
+  .content .accordian {
+    padding-top: 15px;
+    display: block;
+    padding-bottom: 30px; }
+    .content .accordian .item {
+      background-color: #9e9c9f;
+      margin-top: 15px;
+      color: black;
+      border-radius: 5px;
+      -webkit-box-shadow: 0px 10px 15px -7px black;
+      box-shadow: 0px 10px 15px -7px black; }
+      .content .accordian .item .heading {
+        position: relative;
+        padding: 3px; }
+        .content .accordian .item .heading i {
+          color: white;
+          position: absolute;
+          top: 12px;
+          right: 7px;
+          cursor: pointer;
+          -webkit-transition: 0.3s;
+          transition: 0.3s; }
+      .content .accordian .item .body {
+        max-height: 0px;
+        overflow: hidden;
+        -webkit-transition: 0.7s;
+        transition: 0.7s;
+        z-index: 1;
+        position: relative; }
+        .content .accordian .item .body p {
+          height: 100%;
+          margin-top: 0px; }
+      .content .accordian .item .tags {
+        text-align: center;
+        color: white; }
+        .content .accordian .item .tags span {
+          padding: 6px;
+          background-color: #ffa500;
+          border-radius: 10px;
+          margin-bottom: 5px;
+          display: inline-block; }
+        .content .accordian .item .tags .tech {
+          background-color: #515052; }
+        .content .accordian .item .tags .soft {
+          background-color: #083d77; }
+        .content .accordian .item .tags .job {
+          background-color: #ffa500; }
+      .content .accordian .item.open .heading i {
+        -webkit-transform: rotateX(180deg);
+        transform: rotateX(180deg); }
+      .content .accordian .item.open .body {
+        max-height: 1000px; }
+
+@media screen and (min-width: 400px) {
+  .content .institute {
+    width: 400px;
+    margin: auto; } }
+
+@media screen and (min-width: 600px) {
+  .content {
+    width: 675px;
+    margin: auto; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -66,3 +66,17 @@ function loadElement($tbl){
 function scroll(scrollTo){
   $('html,body').animate({scrollTop: scrollTo.offset().top},'slow');
 }
+
+$(".accordian .item").click(function(){
+  
+  var $this = $(this);
+  var height = $this.find('p').height();
+
+  if ($this.hasClass('open')) {
+    $this.toggleClass('open').removeClass('open').children('.body').css("max-height", "0px");
+    
+  } else {
+    $(".accordian .item").removeClass('open').children('.body').css("max-height", "0px");
+    $this.toggleClass('open').children('.body').css("max-height", (height + 15) + "px");
+  }
+});
