@@ -447,7 +447,7 @@ p {
         border-radius: 5px;
         height: 50px;
         width: 50px;
-        background-color: var(--blue);
+        background-color: #083d77;
         margin: 2px 10px;
         position: relative;
         overflow: hidden;
@@ -488,7 +488,7 @@ p {
       .content .social-wrapper .social .codepen:hover {
         background-color: #000000; }
       .content .social-wrapper .social .email:hover {
-        background-color: #9900cc; }
+        background-color: #ffa500; }
 
 .thanks-msg {
   display: none; }
