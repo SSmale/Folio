@@ -12,7 +12,8 @@ h1 {
   font-family: Amatic SC, cursive;
   font-size: 3em; }
 
-p, h3 {
+p,
+h3 {
   font-family: Raleway, sans-serif;
   font-weight: 200;
   font-size: 1em; }
@@ -143,15 +144,25 @@ p {
 .site .footer {
   display: none; }
 
-.site .work, .site .school, .site .about, .site .contact {
+.site .work,
+.site .school,
+.site .about,
+.site .contact {
   display: none; }
 
-.site.element .hero, .site.element .home {
+.site.element .hero,
+.site.element .home {
   display: none; }
 
-.site.element .work.open, .site.element .school.open, .site.element .about.open, .site.element .contact.open {
+.site.element .work.open,
+.site.element .school.open,
+.site.element .about.open,
+.site.element .contact.open {
   display: block; }
-  .site.element .work.open .icon-wrap, .site.element .school.open .icon-wrap, .site.element .about.open .icon-wrap, .site.element .contact.open .icon-wrap {
+  .site.element .work.open .icon-wrap,
+  .site.element .school.open .icon-wrap,
+  .site.element .about.open .icon-wrap,
+  .site.element .contact.open .icon-wrap {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -162,13 +173,19 @@ p {
     background-color: #0b55a7;
     -webkit-box-shadow: 0px 14px 30px -11px #000;
     box-shadow: 0px 14px 30px -11px #000; }
-    .site.element .work.open .icon-wrap .icon, .site.element .school.open .icon-wrap .icon, .site.element .about.open .icon-wrap .icon, .site.element .contact.open .icon-wrap .icon {
+    .site.element .work.open .icon-wrap .icon,
+    .site.element .school.open .icon-wrap .icon,
+    .site.element .about.open .icon-wrap .icon,
+    .site.element .contact.open .icon-wrap .icon {
       position: absolute;
       height: 40px;
       width: 40px;
       top: calc(50% - 20px);
       right: calc(50% - 20px); }
-  .site.element .work.open .subtitle, .site.element .school.open .subtitle, .site.element .about.open .subtitle, .site.element .contact.open .subtitle {
+  .site.element .work.open .subtitle,
+  .site.element .school.open .subtitle,
+  .site.element .about.open .subtitle,
+  .site.element .contact.open .subtitle {
     text-align: center;
     font-size: 1.2em;
     padding: 5px 0px; }
