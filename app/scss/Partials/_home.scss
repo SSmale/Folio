@@ -4,7 +4,6 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-gap: 5px;
-    background-color: lighten($text-colour, 5%);
     .icon-container {
         position: relative;
         height: 100%;
@@ -15,7 +14,7 @@
             height: 90px;
             width: 90px;
             border-radius: 50%;
-            background-color: rgba($cta-colour, 5);
+            background-color: rgba($red, 5);
             position: relative;
             top: calc(50% - 45px);
             left: calc(50% - 45px);

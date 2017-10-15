@@ -1,4 +1,16 @@
 $(function () {
+
+  var split = location.search.replace('?', '').split('=')
+
+  if (split[1]) {
+    $('.site').addClass('element').find('.contact').addClass('open').find('.thanks-msg').addClass('open')
+
+    function msg() {
+      $('.thanks-msg').removeClass('open');
+    }
+    window.setTimeout(msg, 4000);
+  }
+
   // do functionality on screens smaller than 768px
 
   $(".icon-container").click(function () {

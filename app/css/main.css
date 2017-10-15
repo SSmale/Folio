@@ -12,6 +12,12 @@ h1 {
   font-family: Amatic SC, cursive;
   font-size: 3em; }
 
+button,
+label,
+input,
+optgroup,
+select,
+textarea,
 p,
 h3 {
   font-family: Raleway, sans-serif;
@@ -29,9 +35,12 @@ h6 {
 p {
   padding: 0px 15px; }
 
+.smaller {
+  font-size: 0.8em; }
+
 .site {
   position: absolute;
-  min-height: 100%;
+  min-height: calc(100% - 30px);
   min-width: 100%; }
   .site #body-tag {
     position: absolute;
@@ -91,8 +100,7 @@ p {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  grid-gap: 5px;
-  background-color: #5e5d5f; }
+  grid-gap: 5px; }
   .home .icon-container {
     position: relative;
     height: 100%;
@@ -380,5 +388,127 @@ p {
   .content {
     width: 675px;
     margin: auto; } }
+
+.content {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+  .content form {
+    padding-bottom: 10px; }
+    .content form label {
+      display: block;
+      width: 80%;
+      margin: auto; }
+    .content form input,
+    .content form textarea,
+    .content form button {
+      margin: auto;
+      display: block;
+      width: 80%;
+      padding: 0px;
+      border: 3px solid #ffa500; }
+      .content form input:focus,
+      .content form textarea:focus,
+      .content form button:focus {
+        border: 3px solid #ffc966;
+        background-color: lightgray; }
+      .content form input:invalid,
+      .content form textarea:invalid,
+      .content form button:invalid {
+        border: 3px solid #e71d36;
+        background-color: #e71d36; }
+        .content form input:invalid:focus,
+        .content form textarea:invalid:focus,
+        .content form button:invalid:focus {
+          border: 3px solid #f17988;
+          background-color: #f17988; }
+    .content form button {
+      margin-top: 10px;
+      margin-right: 10%;
+      width: 30%;
+      max-width: 150px;
+      background-color: #ffa500;
+      color: white;
+      border-radius: 25px;
+      -webkit-transition: border-radius 300ms;
+      transition: border-radius 300ms;
+      cursor: pointer; }
+  .content .social-wrapper {
+    width: 300px;
+    margin: auto; }
+    .content .social-wrapper .social {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      margin: auto;
+      padding-bottom: 30px; }
+      .content .social-wrapper .social li {
+        /*	transition: 0.3s;
+                            */
+        border-radius: 5px;
+        height: 50px;
+        width: 50px;
+        background-color: var(--blue);
+        margin: 2px 10px;
+        position: relative;
+        overflow: hidden;
+        display: inline-block; }
+        .content .social-wrapper .social li a {
+          color: white;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          text-decoration: none; }
+          .content .social-wrapper .social li a i:first-child {
+            -webkit-transition: 0.3s;
+            transition: 0.3s;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
+          .content .social-wrapper .social li a i:last-child {
+            -webkit-transition: 0.3s;
+            transition: 0.3s;
+            position: absolute;
+            top: 150%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
+        .content .social-wrapper .social li:hover a i {
+          -webkit-transition: 0.3s;
+          transition: 0.3s; }
+          .content .social-wrapper .social li:hover a i:first-child {
+            top: -100%; }
+          .content .social-wrapper .social li:hover a i:last-child {
+            top: 50%; }
+      .content .social-wrapper .social .github:hover {
+        background-color: #000000; }
+      .content .social-wrapper .social .linkedin:hover {
+        background-color: #0077b5; }
+      .content .social-wrapper .social .codepen:hover {
+        background-color: #000000; }
+      .content .social-wrapper .social .email:hover {
+        background-color: #9900cc; }
+
+.thanks-msg {
+  display: none; }
+  .thanks-msg.open {
+    display: block;
+    background-color: rgba(255, 165, 0, 0.75);
+    position: absolute;
+    z-index: 10;
+    height: 100%;
+    width: 100%;
+    top: 0; }
+    .thanks-msg.open .solid {
+      position: relative;
+      top: calc(50% - 56px);
+      background-color: #ffa500;
+      text-align: center;
+      width: 300px;
+      margin: auto;
+      padding: 5px; }
+      .thanks-msg.open .solid .title {
+        margin: 0px; }
 
 /*# sourceMappingURL=main.css.map */

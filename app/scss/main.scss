@@ -1,5 +1,6 @@
 /* Main SCSS File */
 
+// Tools - Defines Vendor CSS
 // Basics - Defines the global CSS
 @import "Basics/variables";
 @import "Basics/scaffolding";
@@ -13,4 +14,4 @@
 @import "Partials/heroAndHomeLaptop";
 @import "Partials/educationMobile";
 @import "Partials/educationTablet";
-// Tools - Defines Vendor CSS
+@import "Partials/contactMobile";

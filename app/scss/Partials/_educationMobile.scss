@@ -43,7 +43,7 @@
         display: block;
         padding-bottom: 30px;
         .item {
-            background-color: lighten($text-colour, 30%);
+            background-color: lighten($grey, 30%);
             margin-top: 15px;
             color: black;
             border-radius: 5px;
@@ -82,10 +82,10 @@
                     display: inline-block;
                 }
                 .tech {
-                    background-color: $text-colour;
+                    background-color: $grey;
                 }
                 .soft {
-                    background-color: $other;
+                    background-color: $blue;
                 }
                 .job {
                     background-color: $gold;

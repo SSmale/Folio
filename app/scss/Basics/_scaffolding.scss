@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     color: white;
-    background-color: $other;
+    background-color: $blue;
     box-sizing: border-box;
 }
 
@@ -12,6 +12,12 @@ h1 {
     font-size: 3em;
 }
 
+button,
+label,
+input,
+optgroup,
+select,
+textarea,
 p,
 h3 {
     font-family: $p-font;
@@ -35,4 +41,8 @@ div {
 
 p {
     padding: 0px 15px;
+}
+
+.smaller {
+    font-size: 0.8em;
 }

@@ -27,7 +27,7 @@
                     width: 50px;
                     padding: 5px;
                     border-radius: 50%;
-                    background-color: lighten($other, 10%);
+                    background-color: lighten($blue, 10%);
                     box-shadow: $bs;
                     .icon {
                         position: absolute;
@@ -58,10 +58,10 @@
                 right: 0px;
                 box-shadow: 0px 0px 25px 1px #000;
                 border-top-left-radius: 50%;
-                background-color: rgba($other, 0.75);
+                background-color: rgba($blue, 0.75);
                 padding: 5px;
                 &:hover {
-                    background-color: $other;
+                    background-color: $blue;
                     box-shadow: 0px 0px 40px 1px #000;
                     cursor: pointer;
                 }
