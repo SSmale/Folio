@@ -1,9 +1,8 @@
 @media screen and (min-width:1200px) {
     .site {
         display: grid;
-        background-color: orange;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-areas: " hero hero hero " " . . nav " " . content . ";
+        grid-template-areas: " . . nav " " hero hero hero " " . content . ";
         .hero {
             grid-area: hero;
         }
