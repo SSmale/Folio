@@ -5,13 +5,13 @@
 @import "Basics/variables";
 @import "Basics/scaffolding";
 // Pages - Defines Page level CSS
+@import "Pages/desktop";
 // Partials - Defines element CSS
 @import "Partials/hero";
 @import "Partials/home";
 @import "Partials/content";
 @import "Partials/work";
 @import "Partials/workTablet";
-@import "Partials/heroAndHomeLaptop";
 @import "Partials/educationMobile";
 @import "Partials/educationTablet";
 @import "Partials/contactMobile";
