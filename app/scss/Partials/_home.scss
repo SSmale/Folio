@@ -57,7 +57,7 @@
         }
     }
     @media screen and (min-width:520px) {
-        min-height: calc(100vh - 310px);
+        min-height: calc(100vh - 500px);
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: auto 130px auto;
         .icon-container {
