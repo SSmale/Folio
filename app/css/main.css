@@ -96,11 +96,11 @@ p {
     bottom: -20px; }
 
 .home {
-  min-height: calc(100vh - 310px);
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-gap: 5px;
+  min-height: calc(100vh - 310px);
   background-color: #515052; }
   .home .icon-container {
     position: relative;
@@ -149,6 +149,13 @@ p {
       height: 60px;
       top: calc(50% - 30px);
       left: calc(50% - 30px); }
+  @media screen and (min-width: 520px) {
+    .home {
+      min-height: calc(100vh - 310px);
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: auto 130px auto; }
+      .home .icon-container {
+        grid-row: 2; } }
 
 .site .footer {
   display: none; }
