@@ -551,5 +551,9 @@ p {
       background-color: #515052; }
     .content .skills .skill-unit .skill-icon.skill-10 span:nth-child(n+11) {
       background-color: #515052; }
+  @media screen and (min-width: 600px) {
+    .content .skills {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); } }
 
 /*# sourceMappingURL=main.css.map */
