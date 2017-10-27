@@ -1,117 +1,566 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0; user-scalable=0;">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>SSmale Portfolio</title>
+
+    <title>Simon Smale | Web Developer, Student and Amature Photographer based on the sunny South Coast.</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/Icons/Favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/Icons/Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/Icons/Favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/Icons/Favicon/manifest.json">
+    <link rel="mask-icon" href="images/Icons/Favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="images/Icons/Favicon/favicon.ico">
+    <meta name="msapplication-config" content="images/Icons/Favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
     <link rel="stylesheet" href="css/main.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway|Amatic+SC" rel="stylesheet"> 
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Amatic+SC" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
+
 <body>
     <div class="site">
-        <img id="body-tag" src="images/Icons/icon-body.svg" alt="" class="icon">                
+        <img id="body-tag" src="images/Icons/icon-body.svg" alt="" class="icon">
         <div class="hero">
-            <div class="avitar">
-                <img src="images/avitar.jpg" alt="Simon Smale Avitar Imaage">
+            <div class="container">
+                <div class="avitar">
+                    <img src="images/avitar.jpg" alt="Simon Smale Avitar Imaage">
+                </div>
+                <h1 class="title">Simon Smale</h1>
+                <h3 class="strapline">Coding // Photography // Learning</h3>
             </div>
-            <h1 class="title">Simon Smale</h1>
-            <h3 class="strapline">Coding // Photography // Learning</h3>
         </div>
-        <div class="home"> 
-            <div data-area="work" class="icon-container">
-                <div class="circle"></div>
-                <h1 class="name">Work</h1>
-                <img class="icon" src="images/Icons/icon-code.svg" >    
-            </div>  
-            <div data-area="school" class="icon-container">      
-                <div class="circle"></div>
-                <h1 class="name">School</h1>
-                <img class="icon" src="images/Icons/icon-grad.svg" >            
-            </div>
+        <div class="home">
             <div data-area="about" class="icon-container">
                 <div class="circle"></div>
                 <h1 class="name">About Me</h1>
-                <img class="icon" src="images/Icons/icon-person.svg" >            
+                <img class="icon" src="images/Icons/icon-person.svg">
+            </div>
+            <div data-area="work" class="icon-container">
+                <div class="circle"></div>
+                <h1 class="name">Work</h1>
+                <img class="icon" src="images/Icons/icon-code.svg">
+            </div>
+            <div data-area="school" class="icon-container">
+                <div class="circle"></div>
+                <h1 class="name">School</h1>
+                <img class="icon" src="images/Icons/icon-grad.svg">
             </div>
             <div data-area="contact" class="icon-container">
                 <div class="circle"></div>
                 <h1 class="name">Contact</h1>
-                <img class="icon" src="images/Icons/icon-at.svg" >            
+                <img class="icon" src="images/Icons/icon-at.svg">
+            </div>
+        </div>
+        <div class="about">
+            <div class="icon-wrap">
+                <img class="icon" src="images/Icons/icon-person.svg">
+            </div>
+            <h3 class="subtitle">About Me</h3>
+            <div class="content">
+                <p>Hi, I'm Simon, a third year Forensic Computing and Security student at Bournemouth University with a passion
+                    for web development. I am currently on my placement year at Greenwood Campbell, a digital agency in Bournemouth.</p>
+                <p>My main focus within web is back end development, however seeing the awesome creative work of my collegues
+                    it has encouraged me to step up my game and explore other areas.</p>
+                <p>Morving forward I hope to round out my year with a better understanding and practical experience in front
+                    end development, UX and SEO</p>
+                <div class="skills">
+                    <div class="skill-unit">
+                        <h3 class="skill-label">Communicating</h3>
+                        <div class="skill-icon skill-9">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="skill-unit">
+                        <h3 class="skill-label">Learning</h3>
+                        <div class="skill-icon skill-8">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="skill-unit">
+                        <h3 class="skill-label">Organisation</h3>
+                        <div class="skill-icon skill-7">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="skill-unit">
+                        <h3 class="skill-label">Plannning</h3>
+                        <div class="skill-icon skill-7">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="skill-unit">
+                        <h3 class="skill-label">Designing</h3>
+                        <div class="skill-icon skill-5">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="skill-unit">
+                        <h3 class="skill-label">Programming</h3>
+                        <div class="skill-icon skill-8">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="skill-unit">
+                        <h3 class="skill-label">Teaching</h3>
+                        <div class="skill-icon skill-6">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="skill-unit">
+                        <h3 class="skill-label skill-10">Thinking</h3>
+                        <div class="skill-icon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="work">
             <div class="icon-wrap">
-                <img class="icon" src="images/Icons/icon-code.svg" >
-            </div> 
+                <img class="icon" src="images/Icons/icon-code.svg">
+            </div>
             <h3 class="subtitle">Work</h3>
-            <p class="intro">Here is a collection of projects that I have completed during my time at university. These projects were devloped to practice both front and back end dev, as well as some designing</p>
             <div class="content">
-                <div class="project-container feature" id="project1">
-                    <h3 class="projectName">Web Programming</h3>
-                    <img src="images/projects/SOSA.png" alt="SOSA" class="screenshot">
-                    <p class="writeup">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis sunt pariatur nostrum deserunt cupiditate accusantium repudiandae sapiente temporibus explicabo ullam, reprehenderit laborum corporis laboriosam optio tenetur fugit corrupti ex? Deserunt asperiores adipisci ad laudantium ab. Fugit harum eos fuga quibusdam deleniti non nulla omnis blanditiis odio expedita, corporis voluptates eveniet!</p>
+                <p class="intro">Here is a collection of projects that I have completed during my time at university. These projects were
+                    devloped to practice both front and back end dev, as well as some designing</p>
+                <div class="projects">
+                    <div class="project-container feature" id="project1">
+                        <h3 class="projectName">Web Programming</h3>
+                        <img src="images/projects/SOSA.png" alt="SOSA" class="screenshot">
+                        <p class="writeup">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis sunt pariatur nostrum deserunt cupiditate
+                            accusantium repudiandae sapiente temporibus explicabo ullam, reprehenderit laborum corporis laboriosam
+                            optio tenetur fugit corrupti ex? Deserunt asperiores adipisci ad laudantium ab. Fugit harum eos
+                            fuga quibusdam deleniti non nulla omnis blanditiis odio expedita, corporis voluptates eveniet!</p>
+                    </div>
+                    <div class="project-container" id="project2">
+                        <h3 class="projectName">Xplore the Forest</h3>
+                        <img src="images/projects/Xplore.png" alt="Xplore the Forest" class="screenshot">
+                        <p class="writeup">Cum quo et, minus enim facilis id architecto officiis dolore ducimus in laboriosam dignissimos tenetur
+                            vel debitis obcaecati voluptatem accusamus modi. Illo fuga magnam exercitationem quam harum,
+                            commodi autem ut velit minus illum aspernatur provident maxime quisquam consequatur fugiat rerum?
+                            Tempore consequuntur voluptate deleniti dolores. Id necessitatibus odio quo. Labore!</p>
+                    </div>
+                    <div class="project-container" id="project3">
+                        <h3 class="projectName">Computing in Business</h3>
+                        <img src="images/projects/CiB.png" alt="Computing in Business" class="screenshot">
+                        <p class="writeup">Sint minus id ipsum quasi earum placeat neque ducimus enim voluptatem, libero maiores aliquid suscipit
+                            commodi animi consequatur, amet nemo! Consequuntur soluta ad, nisi rem, sit eius corporis, iste
+                            maiores qui iusto omnis corrupti molestiae sint. Ipsam rem nulla, fuga similique debitis enim
+                            voluptates nesciunt assumenda eveniet beatae? Sunt, totam.</p>
+                    </div>
+                    <div class="project-container" id="project4">
+                        <h3 class="projectName">Jims Gym</h3>
+                        <img src="images/projects/JimsGym.png" alt="Jims Gym" class="screenshot">
+                        <p class="writeup">Maxime suscipit sapiente cupiditate nam magni quis explicabo natus tempore sequi nulla corrupti iste
+                            dolor ullam harum excepturi alias dicta culpa voluptatibus vel, fugiat error laudantium odio
+                            ducimus! Tenetur, placeat eum cupiditate quidem excepturi odit atque voluptatum pariatur ipsam.
+                            Numquam suscipit non deserunt reiciendis vitae ut saepe, nihil voluptatum adipisci.</p>
+                    </div>
+                    <div class="project-container" id="project5">
+                        <h3 class="projectName">Larry Ullman PHP books</h3>
+                        <img src="images/projects/php.png" alt="php" class="screenshot">
+                        <p class="writeup">Consequatur, a cupiditate? Delectus inventore laborum ut, consequuntur explicabo cupiditate numquam
+                            dolores voluptatum nostrum omnis quod modi sint tempora aut quaerat eveniet quas adipisci consectetur
+                            obcaecati ipsam suscipit. Veritatis blanditiis odio non, possimus, quis vitae esse maiores sunt
+                            perferendis corrupti dolorem quae laboriosam numquam delectus alias, labore earum ipsam nisi.</p>
+                    </div>
                 </div>
-                <div class="project-container" id="project2">
-                    <h3 class="projectName">Xplore the Forest</h3>
-                    <img src="images/projects/Xplore.png" alt="Xplore the Forest" class="screenshot">
-                    <p class="writeup">Cum quo et, minus enim facilis id architecto officiis dolore ducimus in laboriosam dignissimos tenetur vel debitis obcaecati voluptatem accusamus modi. Illo fuga magnam exercitationem quam harum, commodi autem ut velit minus illum aspernatur provident maxime quisquam consequatur fugiat rerum? Tempore consequuntur voluptate deleniti dolores. Id necessitatibus odio quo. Labore!</p>
-                </div>
-                <div class="project-container" id="project3">
-                    <h3 class="projectName">Computing in Business</h3>
-                    <img src="images/projects/CiB.png" alt="Computing in Business" class="screenshot">
-                    <p class="writeup">Sint minus id ipsum quasi earum placeat neque ducimus enim voluptatem, libero maiores aliquid suscipit commodi animi consequatur, amet nemo! Consequuntur soluta ad, nisi rem, sit eius corporis, iste maiores qui iusto omnis corrupti molestiae sint. Ipsam rem nulla, fuga similique debitis enim voluptates nesciunt assumenda eveniet beatae? Sunt, totam.</p>
-                </div>    
-                <div class="project-container" id="project4">
-                    <h3 class="projectName">Jims Gym</h3>
-                    <img src="images/projects/JimsGym.png" alt="Jims Gym" class="screenshot">
-                    <p class="writeup">Maxime suscipit sapiente cupiditate nam magni quis explicabo natus tempore sequi nulla corrupti iste dolor ullam harum excepturi alias dicta culpa voluptatibus vel, fugiat error laudantium odio ducimus! Tenetur, placeat eum cupiditate quidem excepturi odit atque voluptatum pariatur ipsam. Numquam suscipit non deserunt reiciendis vitae ut saepe, nihil voluptatum adipisci.</p>
-                </div>
-                <div class="project-container" id="project5">  
-                    <h3 class="projectName">Larry Ullman PHP books</h3>
-                    <img src="images/projects/php.png" alt="php" class="screenshot">
-                    <p class="writeup">Consequatur, a cupiditate? Delectus inventore laborum ut, consequuntur explicabo cupiditate numquam dolores voluptatum nostrum omnis quod modi sint tempora aut quaerat eveniet quas adipisci consectetur obcaecati ipsam suscipit. Veritatis blanditiis odio non, possimus, quis vitae esse maiores sunt perferendis corrupti dolorem quae laboriosam numquam delectus alias, labore earum ipsam nisi.</p>
-                </div> 
             </div>
         </div>
         <div class="school">
             <div class="icon-wrap">
-                <img class="icon" src="images/Icons/icon-grad.svg" >
-            </div> 
-            <h3 class="subtitle">School</h3>
-            <div class="content">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, ipsum commodi? Ullam quia, soluta laudantium nihil, dolor corporis aperiam veritatis aliquam voluptates quam praesentium voluptate quidem nam, recusandae totam magnam dolores. Dignissimos minus molestiae, sequi inventore tempore neque debitis minima pariatur, porro rerum adipisci nobis voluptatibus quidem aperiam dolor voluptatem?</p>
-                <p>Ad, quis facere. Saepe doloribus obcaecati ipsam, officia similique placeat laudantium aliquam quidem repellendus iure ab veritatis, corrupti vero magnam fugiat facere nostrum reprehenderit. Dignissimos minus repudiandae tenetur ipsa amet sint ipsam tempora, suscipit consectetur sed optio laborum aspernatur rem doloribus accusantium aliquid recusandae? Praesentium illo incidunt commodi architecto id.</p>
-                <p>A laudantium magni esse voluptatum exercitationem fugiat sequi voluptatem, vel dicta mollitia animi nam facere provident. Provident nulla aut, necessitatibus ex consectetur quia asperiores aspernatur voluptatem corrupti deleniti eligendi veniam distinctio nostrum quibusdam repellendus a totam minus inventore explicabo dolorum doloremque odio maxime? Iste eaque amet quisquam debitis, atque harum.</p>
+                <img class="icon" src="images/Icons/icon-grad.svg">
             </div>
-         </div>  
-        <div class="about">
-            <div class="icon-wrap">
-                <img class="icon" src="images/Icons/icon-person.svg" >
-            </div> 
-            <h3 class="subtitle">About Me</h3>
+            <h3 class="subtitle">Education</h3>
             <div class="content">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, ipsum commodi? Ullam quia, soluta laudantium nihil, dolor corporis aperiam veritatis aliquam voluptates quam praesentium voluptate quidem nam, recusandae totam magnam dolores. Dignissimos minus molestiae, sequi inventore tempore neque debitis minima pariatur, porro rerum adipisci nobis voluptatibus quidem aperiam dolor voluptatem?</p>
-                <p>Ad, quis facere. Saepe doloribus obcaecati ipsam, officia similique placeat laudantium aliquam quidem repellendus iure ab veritatis, corrupti vero magnam fugiat facere nostrum reprehenderit. Dignissimos minus repudiandae tenetur ipsa amet sint ipsam tempora, suscipit consectetur sed optio laborum aspernatur rem doloribus accusantium aliquid recusandae? Praesentium illo incidunt commodi architecto id.</p>
-                <p>A laudantium magni esse voluptatum exercitationem fugiat sequi voluptatem, vel dicta mollitia animi nam facere provident. Provident nulla aut, necessitatibus ex consectetur quia asperiores aspernatur voluptatem corrupti deleniti eligendi veniam distinctio nostrum quibusdam repellendus a totam minus inventore explicabo dolorum doloremque odio maxime? Iste eaque amet quisquam debitis, atque harum.</p>
-            </div>  
+                <div class="institute">
+                    <img src="images/Bournemouth_University_logo.svg" alt="Bournemouth University" class="logo">
+                    <div class="course">
+                        <h3>BSc Hons Forensic Computing and Security</h3>
+                    </div>
+                    <h6 class="year">2015-2019</h6>
+                    <div class="grade">
+                        <h4>1
+                            <sup>st</sup>
+                        </h4>
+                    </div>
+                </div>
+                <div class="accordian">
+                    <div class="item">
+                        <div class="heading">
+                            <h3>User Centered Web Development </h3>
+                            <i class="fa fa-chevron-circle-down fa-2x" aria-hidden="true"></i>
+                        </div>
+                        <div class="body">
+                            <p>I learnt the best practices for designing and developing web pages and sites. I gained practical
+                                skills in mark-up languages to create static web pages, and an understanding of how simple
+                                multi-media techniques can improve the web-user's experience.</p>
+                        </div>
+                        <div class="tags">
+                            <span class="tech">HTML</span>
+                            <span class="soft">Team Work</span>
+                            <span class="tech">CSS</span>
+                            <span class="soft">Planning</span>
+                            <span class="tech">JavaScript</span>
+                            <span class="soft">Communication</span>
+                            <span class="tech">Debugging</span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="heading">
+                            <h3>Systems Analysis & Design</h3>
+                            <i class="fa fa-chevron-circle-down fa-2x" aria-hidden="true"></i>
+                        </div>
+                        <div class="body">
+                            <p>How the systems development process affects business. This included the modeling of business
+                                systems using informal and formal techniques, and merging parts needed for system provision
+                                such as the human computer interface and computer systems design.</p>
+                        </div>
+                        <div class="tags">
+                            <span class="soft">Planning</span>
+                            <span class="tech">Data Flow Diagrams</span>
+                            <span class="soft">Communication</span>
+                            <span class="tech">Entity Relationship</span>
+                            <span class="soft">Data Gathering</span>
+                            <span class="tech">Information Extraction</span>
+                            <span class="soft">Presenting</span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="heading">
+                            <h3>Programming</h3>
+                            <i class="fa fa-chevron-circle-down fa-2x" aria-hidden="true"></i>
+                        </div>
+                        <div class="body">
+                            <p>I learnt to write programs that meet set specifications using a Java.</p>
+                        </div>
+                        <div class="tags">
+                            <span class="tech">Java</span>
+                            <span class="job">Documentation</span>
+                            <span class="tech">Debugging</span>
+                            <span class="soft">Planning</span>
+                            <span class="tech">OOP</span>
+                            <span class="soft">Time Management</span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="heading">
+                            <h3>Computers & Networks</h3>
+                            <i class="fa fa-chevron-circle-down fa-2x" aria-hidden="true"></i>
+                        </div>
+                        <div class="body">
+                            <p>I learnt about data representations for storage and transmission, the basic architecture of computers,
+                                peripherals, operating systems and file systems, and networking protocols.</p>
+                        </div>
+                        <div class="tags">
+                            <span class="tech">Cisco Netowrks</span>
+                            <span class="tech">Python</span>
+                            <span class="soft">Planning</span>
+                            <span class="soft">Reporting</span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="heading">
+                            <h3>Relational Databases</h3>
+                            <i class="fa fa-chevron-circle-down fa-2x" aria-hidden="true"></i>
+                        </div>
+                        <div class="body">
+                            <p>I gained an understanding of the issues involved in developing and using relational databases,
+                                and the processes to become an expert in structured query language and database design techniques.</p>
+                        </div>
+                        <div class="tags">
+                            <span class="tech">Oricale SQL</span>
+                            <span class="soft">Planning</span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="heading">
+                            <h3>Business & Professional Issues</h3>
+                            <i class="fa fa-chevron-circle-down fa-2x" aria-hidden="true"></i>
+                        </div>
+                        <div class="body">
+                            <p>This unit helped to develop skills in teamwork, business appreciation, communication, professional
+                                behaviour, CV writing and research, and knowledge of the computing industry.</p>
+                        </div>
+                        <div class="tags">
+                            <span class="soft">Presenting</span>
+                            <span class="soft">Time Management</span>
+                            <span class="soft">Team Work</span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="heading">
+                            <h3>Web Programming</h3>
+                            <i class="fa fa-chevron-circle-down fa-2x" aria-hidden="true"></i>
+                        </div>
+                        <div class="body">
+                            <p>I will learn to select and apply technologies appropriate to the issues being addressed. I will
+                                also develop an understanding of the legal, ethical and social issues in this rapidly changing
+                                environment.
+                            </p>
+                        </div>
+                        <div class="tags">
+                            <span class="soft">Team Work</span>
+                            <span class="tech">PHP</span>
+                            <span class="soft">Time Management</span>
+                            <span class="tech">MVC</span>
+                            <span class="job">Documentation</span>
+                            <span class="tech">Python</span>
+                            <span class="soft">Communication</span>
+                            <span class="tech">MySQL</span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="heading">
+                            <h3>Systems Design</h3>
+                            <i class="fa fa-chevron-circle-down fa-2x" aria-hidden="true"></i>
+                        </div>
+                        <div class="body">
+                            <p>With a focus on ‘upstream’ development tasks, I will learn about the needs and of software system
+                                designs, and explore the problems with traditional systems development such as human computer
+                                interface design and usability.</p>
+                        </div>
+                        <div class="tags">
+                            <span class="tech"></span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="heading">
+                            <h3>Ethical Hacking & Countermeasure</h3>
+                            <i class="fa fa-chevron-circle-down fa-2x" aria-hidden="true"></i>
+                        </div>
+                        <div class="body">
+                            <p>An opportunity to develop skills in digital security and forensics. I will learn about the relationships
+                                between security and what can compromise it.</p>
+                        </div>
+                        <div class="tags">
+                            <span class="tech">Malware</span>
+                            <span class="soft">Reporting</span>
+                            <span class="job">Social Engineering</span>
+                            <span class="tech">Kali</span>
+
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="heading">
+                            <h3>Digital Forensics</h3>
+                            <i class="fa fa-chevron-circle-down fa-2x" aria-hidden="true"></i>
+                        </div>
+                        <div class="body">
+                            <p>I will make security plans and use forensic techniques in distributed and non-distributed environments.
+                                Practical work will focus on non-distributed environments, and topics covered include data
+                                structures and algorithms.</p>
+                        </div>
+                        <div class="tags">
+                            <span class="soft">Reporting</span>
+                            <span class="soft">Presenting</span>
+                            <span class="tech">Forensic Investigation</span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="heading">
+                            <h3>Project Management</h3>
+                            <i class="fa fa-chevron-circle-down fa-2x" aria-hidden="true"></i>
+                        </div>
+                        <div class="body">
+                            <p>I will gain experience of working in a team on an IT systems development project based on my
+                                chosen degree title, which will prepare me for work placement.</p>
+                        </div>
+                        <div class="tags">
+                            <span class="job">Agile</span>
+                            <span class="tech">Linux</span>
+                            <span class="job">Waterfall</span>
+                            <span class="soft">Reporting</span>
+                            <span class="soft">Presenting</span>
+                            <span class="tech">Forensic Investigation</span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="heading">
+                            <h3>Infastructure Strategy</h3>
+                            <i class="fa fa-chevron-circle-down fa-2x" aria-hidden="true"></i>
+                        </div>
+                        <div class="body">
+                            <p>Explore the relationship between the goals of Information Systems and the infrastructure strategies
+                                of small and medium enterprises. Look at computer and networking infrastructures and characteristics
+                                like flexibility, scalability, performance, resilience, quality of service and security,
+                                and design choices and implications of corporate infrastructure.</p>
+                        </div>
+                        <div class="tags"></div>
+                    </div>
+                    <div class="item">
+                        <div class="heading">
+                            <h3>Industrial Placement</h3>
+                            <i class="fa fa-chevron-circle-down fa-2x" aria-hidden="true"></i>
+                        </div>
+                        <div class="body">
+                            <p></p>
+                        </div>
+                        <div class="tags">
+                            <span class="tech">ASP.Net</span>
+                            <span class="job">Client Comms</span>
+                            <span class="tech">Debugging</span>
+                            <span class="soft">Communication</span>
+                            <span class="tech">MVC</span>
+                            <span class="tech">CMS</span>
+                            <span class="job">Scope</span>
+                            <span class="soft">Time Management</span>
+                            <span class="tech">Umbraco</span>
+                            <span class="tech">Kentico</span>
+                            <span class="job">Chatbots</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
         <div class="contact">
             <div class="icon-wrap">
-                <img class="icon" src="images/Icons/icon-at.svg" >
-            </div> 
+                <img class="icon" src="images/Icons/icon-at.svg">
+            </div>
             <h3 class="subtitle">Contact Me</h3>
             <div class="content">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, ipsum commodi? Ullam quia, soluta laudantium nihil, dolor corporis aperiam veritatis aliquam voluptates quam praesentium voluptate quidem nam, recusandae totam magnam dolores. Dignissimos minus molestiae, sequi inventore tempore neque debitis minima pariatur, porro rerum adipisci nobis voluptatibus quidem aperiam dolor voluptatem?</p>
-                <p>Ad, quis facere. Saepe doloribus obcaecati ipsam, officia similique placeat laudantium aliquam quidem repellendus iure ab veritatis, corrupti vero magnam fugiat facere nostrum reprehenderit. Dignissimos minus repudiandae tenetur ipsa amet sint ipsam tempora, suscipit consectetur sed optio laborum aspernatur rem doloribus accusantium aliquid recusandae? Praesentium illo incidunt commodi architecto id.</p>
-                <p>A laudantium magni esse voluptatum exercitationem fugiat sequi voluptatem, vel dicta mollitia animi nam facere provident. Provident nulla aut, necessitatibus ex consectetur quia asperiores aspernatur voluptatem corrupti deleniti eligendi veniam distinctio nostrum quibusdam repellendus a totam minus inventore explicabo dolorum doloremque odio maxime? Iste eaque amet quisquam debitis, atque harum.</p>
-            </div>   
-        </div> 
+                <p>While I am still at uni, I am also open to new experiences and opportunities, to learn new skills or practice
+                    my existing set.</p>
+                <p class="smaller">Use the form below to get in contact, drop me an email or use one of the links below to see my open source
+                    work.
+                </p>
+                <form action="https://formspree.io/simon@smalemail.net" method="POST" autocomplete="on">
+                    <label>Name</label>
+                    <input type="text" name="name">
+                    <label>Email</label>
+                    <input type="email" name="_replyto">
+                    <label>Message</label>
+                    <textarea name="comment" cols="30" rows="10"></textarea>
+                    <input type="hidden" name="_next" value="/index.html?t=true" />
+                    <button type="submit"> Submit
+                    </button>
+                </form>
+                <div class="social-wrapper">
+                    <ul class="social">
+                        <li class="github">
+                            <a href="" class="social-github" href="https://github.com/SSmale">
+                                <i class="fa fa-github fa-lg"></i>
+                                <i class="fa fa-github-square fa-2x"></i>
+                            </a>
+                        </li>
+                        <li class="linkedin">
+                            <a class="social-linkedin" href="https://www.linkedin.com/in/simonsmale/">
+                                <i class="fa fa-linkedin fa-lg" aria-hidden="true"></i>
+                                <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li class="codepen">
+                            <a class="social-codepen" href="https://codepen.io/SSmale/#">
+                                <i class="fa fa-codepen fa-lg" aria-hidden="true"></i>
+                                <i class="fa fa-codepen fa-lg" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li class="email">
+                            <a class="social-email" href="mailto:simon@smalemail.net">
+                                <i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i>
+                                <i class="fa fa-paper-plane-o fa-lg" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="thanks-msg">
+                <div class="solid">
+                    <h1 class="title">Thanks</h1>
+                    <p class="msg">Thank you for your message, I'll be in touch</p>
+                </div>
+            </div>
+        </div>
         <div class="footer">
             <div class="svg">
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
-                    <g><path d="M153.7,153.7C57.9,249.5,10,365.3,10,499c0,135.7,47.9,251.5,143.7,347.3l0,0C249.5,942.1,363.3,990,499,990c135.7,0,251.5-47.9,347.3-143.7C942.1,750.5,990,634.7,990,499c0-135.7-47.9-249.5-143.7-345.3l0,0C750.5,57.9,634.7,10,499,10C365.3,10,249.5,57.9,153.7,153.7z M209.6,211.6l2-2C289.4,129.7,387.2,89.8,499,89.8c113.8,0,209.6,39.9,291.4,121.8c79.8,77.8,119.8,175.6,119.8,287.4c0,113.8-39.9,209.6-119.8,291.4C708.6,870.3,612.8,910.2,499,910.2c-111.8,0-209.6-39.9-287.4-119.8C129.8,708.6,89.8,612.8,89.8,499C89.8,387.2,129.8,289.4,209.6,211.6z"/><path d="M293.4,331.3c0,12,4,22,12,29.9L443.1,497L305.4,632.7c-8,8-12,18-12,29.9c0,10,4,18,12,26c8,8,18,12,28,12c12,0,20-4,27.9-10L499,552.9l135.7,137.7c8,6,16,10,28,10c12,0,21.9-4,27.9-10c8-8,12-18,12-28c0-12-4-21.9-12-29.9L554.9,497l135.7-135.7c8-8,12-18,12-27.9c0-12-4-22-12-29.9c-6-8-16-12-25.9-12c-12,0-21.9,4-29.9,12L499,441.1L363.3,303.4c-8-8-18-12-29.9-12c-10,0-20,4-28,12C297.4,311.4,293.4,321.4,293.4,331.3z"/></g>
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000"
+                    enable-background="new 0 0 1000 1000" xml:space="preserve">
+                    <g>
+                        <path d="M153.7,153.7C57.9,249.5,10,365.3,10,499c0,135.7,47.9,251.5,143.7,347.3l0,0C249.5,942.1,363.3,990,499,990c135.7,0,251.5-47.9,347.3-143.7C942.1,750.5,990,634.7,990,499c0-135.7-47.9-249.5-143.7-345.3l0,0C750.5,57.9,634.7,10,499,10C365.3,10,249.5,57.9,153.7,153.7z M209.6,211.6l2-2C289.4,129.7,387.2,89.8,499,89.8c113.8,0,209.6,39.9,291.4,121.8c79.8,77.8,119.8,175.6,119.8,287.4c0,113.8-39.9,209.6-119.8,291.4C708.6,870.3,612.8,910.2,499,910.2c-111.8,0-209.6-39.9-287.4-119.8C129.8,708.6,89.8,612.8,89.8,499C89.8,387.2,129.8,289.4,209.6,211.6z"
+                        />
+                        <path d="M293.4,331.3c0,12,4,22,12,29.9L443.1,497L305.4,632.7c-8,8-12,18-12,29.9c0,10,4,18,12,26c8,8,18,12,28,12c12,0,20-4,27.9-10L499,552.9l135.7,137.7c8,6,16,10,28,10c12,0,21.9-4,27.9-10c8-8,12-18,12-28c0-12-4-21.9-12-29.9L554.9,497l135.7-135.7c8-8,12-18,12-27.9c0-12-4-22-12-29.9c-6-8-16-12-25.9-12c-12,0-21.9,4-29.9,12L499,441.1L363.3,303.4c-8-8-18-12-29.9-12c-10,0-20,4-28,12C297.4,311.4,293.4,321.4,293.4,331.3z"
+                        />
+                    </g>
                 </svg>
             </div>
             <p class="copy">| SSmale &copy2017 |</p>
@@ -120,4 +569,5 @@
     </div>
     <script src="js/main.min.js"></script>
 </body>
+
 </html>
