@@ -38,9 +38,87 @@ p {
 .smaller {
   font-size: 0.8em; }
 
+@media screen and (min-width: 1200px) {
+  body {
+    background: whitesmoke;
+    color: #333333; }
+    body .site .work,
+    body .site .school,
+    body .site .about,
+    body .site .contact,
+    body .site .footer {
+      display: block; }
+      body .site .work .icon-wrap,
+      body .site .school .icon-wrap,
+      body .site .about .icon-wrap,
+      body .site .contact .icon-wrap,
+      body .site .footer .icon-wrap {
+        display: none; }
+      body .site .work .content,
+      body .site .school .content,
+      body .site .about .content,
+      body .site .contact .content,
+      body .site .footer .content {
+        width: 900px; }
+      body .site .work .subtitle,
+      body .site .school .subtitle,
+      body .site .about .subtitle,
+      body .site .contact .subtitle,
+      body .site .footer .subtitle {
+        font-size: 2em;
+        padding-left: 30px;
+        padding-top: 32px;
+        margin-top: 0; }
+    body .site .work,
+    body .site .contact {
+      background: #9e9c9f; }
+    body .site .work .content .projects .project-container .projectName {
+      background-image: linear-gradient(120deg, #9e9c9f, #ffa500); }
+    body .site .footer {
+      text-align: center; }
+      body .site .footer .svg {
+        display: none; }
+    body .site .hero {
+      color: white; }
+    body .site .home {
+      position: absolute;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 1fr;
+      min-height: 100px;
+      background: transparent;
+      right: 30px;
+      top: 10px; }
+      body .site .home .icon-container {
+        -webkit-transform: scale(0.7);
+        transform: scale(0.7); }
+        body .site .home .icon-container .circle.active .name {
+          display: none; } }
+
+@media screen and (min-width: 1500px) {
+  body {
+    font-size: 20px; }
+    body .site .home {
+      right: 50px; }
+    body .site .hero .container .title {
+      max-width: 300px; }
+    body .site .hero .container .strapline {
+      max-width: 325px; }
+    body .site .work .content,
+    body .site .school .content,
+    body .site .about .content,
+    body .site .contact .content,
+    body .site .footer .content {
+      width: 1100px; }
+    body .site .work .subtitle,
+    body .site .school .subtitle,
+    body .site .about .subtitle,
+    body .site .contact .subtitle,
+    body .site .footer .subtitle {
+      padding-left: 10%; } }
+
 .site {
   position: absolute;
-  min-height: calc(100% - 30px);
+  min-height: 100%;
   min-width: 100%; }
   .site #body-tag {
     position: absolute;
@@ -48,7 +126,7 @@ p {
     top: 10px; }
   .site .hero {
     min-height: 310px;
-    background-image: url("https://images.pexels.com/photos/248159/pexels-photo-248159.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
+    background-image: url("https://images.pexels.com/photos/248159/pexels-photo-248159.jpeg?auto=compress&cs=tinysrgb");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0% 45%; }
@@ -244,10 +322,10 @@ p {
     .site.element .footer .svg path {
       fill: white; }
 
-.work P .content .intro {
+.work .content .intro {
   padding-top: 15px; }
 
-.work P .content .content .project-container .projectName {
+.work .content .projects .project-container .projectName {
   position: relative;
   text-align: right;
   padding-right: 10px;
@@ -257,7 +335,7 @@ p {
   background-repeat: no-repeat;
   background-position: 0 89%; }
 
-.work P .content .content .project-container .screenshot {
+.work .content .projects .project-container .screenshot {
   max-width: 90%;
   position: relative;
   left: 5%; }
@@ -265,53 +343,32 @@ p {
 @media screen and (min-width: 768px) {
   .work .content .intro {
     padding-bottom: 30px; }
-  .work .content .content {
+  .work .content .projects {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: " . . " "feature feature" " . . ";
     grid-gap: 5px;
     padding: 5px; }
-    .work .content .content .project-container {
+    .work .content .projects .project-container {
       position: relative; }
-      .work .content .content .project-container .projectName {
+      .work .content .projects .project-container .projectName {
         display: none; }
-      .work .content .content .project-container .screenshot {
+      .work .content .projects .project-container .screenshot {
         max-width: 100%;
         left: 0; }
-      .work .content .content .project-container .writeup {
+      .work .content .projects .project-container .writeup {
         display: none; }
-      .work .content .content .project-container.feature {
+      .work .content .projects .project-container.feature {
         grid-area: feature; }
-        .work .content .content .project-container.feature .projectName {
+        .work .content .projects .project-container.feature .projectName {
           display: block;
           font-size: 1.3em;
           font-weight: 700; }
-        .work .content .content .project-container.feature .screenshot {
+        .work .content .projects .project-container.feature .screenshot {
           max-width: 700px;
           left: calc(50% - 350px); }
-        .work .content .content .project-container.feature .writeup {
+        .work .content .projects .project-container.feature .writeup {
           display: block; } }
-
-@media screen and (min-width: 1200px) {
-  .site {
-    display: grid;
-    background-color: orange;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: " hero hero hero " " . . nav " " . content . "; }
-    .site .hero {
-      grid-area: hero; }
-    .site .home {
-      position: absolute;
-      grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: 1fr;
-      min-height: 100px;
-      background: transparent;
-      right: 20px; }
-      .site .home .icon-container {
-        -webkit-transform: scale(0.7);
-        transform: scale(0.7); }
-        .site .home .icon-container .circle.active .name {
-          display: none; } }
 
 .content {
   padding: 0px 10px;

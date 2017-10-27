@@ -1,6 +1,6 @@
 .site {
     position: absolute;
-    min-height: calc(100% - 30px);
+    min-height: 100%;
     min-width: 100%;
     #body-tag {
         position: absolute;
@@ -10,7 +10,7 @@
     .hero {
         min-height: 310px;
         background: {
-            image: url('https://images.pexels.com/photos/248159/pexels-photo-248159.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb');
+            image: url('https://images.pexels.com/photos/248159/pexels-photo-248159.jpeg?auto=compress&cs=tinysrgb');
             repeat: no-repeat;
             size: cover;
             position: 0% 45%;

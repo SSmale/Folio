@@ -1,9 +1,9 @@
-.work P {
+.work {
     .content {
         .intro {
             padding-top: 15px;
         }
-        .content {
+        .projects {
             //make each one look like a card??
             //box-shadow: $bs;
             .project-container {
@@ -24,7 +24,6 @@
                     position: relative;
                     left: 5%;
                 }
-                .writeup {}
             }
         }
     }
