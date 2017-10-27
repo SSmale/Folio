@@ -1,40 +1,42 @@
 @media screen and (min-width: 768px) {
     .work {
-        .intro {
-            padding-bottom: 30px;
-        }
         .content {
-            display: grid;
-            grid-template-columns: 1fr 1fr; // grid-template-rows: 1fr 1fr 1fr;
-            grid-template-areas: " . . " "feature feature" " . . ";
-            grid-gap: 5px;
-            padding: 5px;
-            .project-container {
-                position: relative;
-                .projectName {
-                    display: none;
-                }
-                .screenshot {
-                    max-width: 100%;
-                    left: 0;
-                }
-                .writeup {
-                    display: none;
-                }
-                &.feature {
-                    grid-area: feature; // grid-row: span 2/2;
-                    // grid-column: span 2;
+            .intro {
+                padding-bottom: 30px;
+            }
+            .content {
+                display: grid;
+                grid-template-columns: 1fr 1fr; // grid-template-rows: 1fr 1fr 1fr;
+                grid-template-areas: " . . " "feature feature" " . . ";
+                grid-gap: 5px;
+                padding: 5px;
+                .project-container {
+                    position: relative;
                     .projectName {
-                        display: block;
-                        font-size: 1.3em;
-                        font-weight: 700;
+                        display: none;
                     }
                     .screenshot {
-                        max-width: 700px;
-                        left: calc(50% - 350px);
+                        max-width: 100%;
+                        left: 0;
                     }
                     .writeup {
-                        display: block;
+                        display: none;
+                    }
+                    &.feature {
+                        grid-area: feature; // grid-row: span 2/2;
+                        // grid-column: span 2;
+                        .projectName {
+                            display: block;
+                            font-size: 1.3em;
+                            font-weight: 700;
+                        }
+                        .screenshot {
+                            max-width: 700px;
+                            left: calc(50% - 350px);
+                        }
+                        .writeup {
+                            display: block;
+                        }
                     }
                 }
             }

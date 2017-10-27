@@ -244,10 +244,10 @@ p {
     .site.element .footer .svg path {
       fill: white; }
 
-.work .intro {
+.work P .content .intro {
   padding-top: 15px; }
 
-.work .content .project-container .projectName {
+.work P .content .content .project-container .projectName {
   position: relative;
   text-align: right;
   padding-right: 10px;
@@ -257,39 +257,39 @@ p {
   background-repeat: no-repeat;
   background-position: 0 89%; }
 
-.work .content .project-container .screenshot {
+.work P .content .content .project-container .screenshot {
   max-width: 90%;
   position: relative;
   left: 5%; }
 
 @media screen and (min-width: 768px) {
-  .work .intro {
+  .work .content .intro {
     padding-bottom: 30px; }
-  .work .content {
+  .work .content .content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: " . . " "feature feature" " . . ";
     grid-gap: 5px;
     padding: 5px; }
-    .work .content .project-container {
+    .work .content .content .project-container {
       position: relative; }
-      .work .content .project-container .projectName {
+      .work .content .content .project-container .projectName {
         display: none; }
-      .work .content .project-container .screenshot {
+      .work .content .content .project-container .screenshot {
         max-width: 100%;
         left: 0; }
-      .work .content .project-container .writeup {
+      .work .content .content .project-container .writeup {
         display: none; }
-      .work .content .project-container.feature {
+      .work .content .content .project-container.feature {
         grid-area: feature; }
-        .work .content .project-container.feature .projectName {
+        .work .content .content .project-container.feature .projectName {
           display: block;
           font-size: 1.3em;
           font-weight: 700; }
-        .work .content .project-container.feature .screenshot {
+        .work .content .content .project-container.feature .screenshot {
           max-width: 700px;
           left: calc(50% - 350px); }
-        .work .content .project-container.feature .writeup {
+        .work .content .content .project-container.feature .writeup {
           display: block; } }
 
 @media screen and (min-width: 1200px) {

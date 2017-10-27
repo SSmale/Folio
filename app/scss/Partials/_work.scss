@@ -1,29 +1,31 @@
-.work {
-    .intro {
-        padding-top: 15px;
-    }
+.work P {
     .content {
-        //make each one look like a card??
-        //box-shadow: $bs;
-        .project-container {
-            .projectName {
-                position: relative;
-                text-align: right;
-                padding-right: 10px; //border-bottom: 4px solid rgba(0, 0, 0, 0.5);
-                width: 85%;
-                background: {
-                    image: linear-gradient(120deg, $blue, $gold);
-                    size: 100% 2px;
-                    repeat: no-repeat;
-                    position: 0 89%;
+        .intro {
+            padding-top: 15px;
+        }
+        .content {
+            //make each one look like a card??
+            //box-shadow: $bs;
+            .project-container {
+                .projectName {
+                    position: relative;
+                    text-align: right;
+                    padding-right: 10px; //border-bottom: 4px solid rgba(0, 0, 0, 0.5);
+                    width: 85%;
+                    background: {
+                        image: linear-gradient(120deg, $blue, $gold);
+                        size: 100% 2px;
+                        repeat: no-repeat;
+                        position: 0 89%;
+                    }
                 }
+                .screenshot {
+                    max-width: 90%;
+                    position: relative;
+                    left: 5%;
+                }
+                .writeup {}
             }
-            .screenshot {
-                max-width: 90%;
-                position: relative;
-                left: 5%;
-            }
-            .writeup {}
         }
     }
 }
