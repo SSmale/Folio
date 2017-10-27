@@ -1,0 +1,30 @@
+.content {
+    .skills {
+        margin-bottom: 35px;
+        .skill-unit {
+            text-align: center;
+            margin: auto;
+            width: 300px;
+            .skill-label {
+                text-align: left;
+                padding-left: 7px;
+                margin-bottom: 5px;
+            }
+            .skill-icon {
+                span {
+                    display: inline-block;
+                    border-radius: 50%;
+                    background-color: $gold;
+                    width: 20px;
+                    height: 20px;
+                    margin-right: 5px;
+                }
+                @for $i from 1 through 10 {
+                    &.skill-#{$i} span:nth-child(n+#{$i+1}) {
+                        background-color: $grey;
+                    }
+                }
+            }
+        }
+    }
+}
