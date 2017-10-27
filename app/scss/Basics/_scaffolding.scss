@@ -1,23 +1,48 @@
-body{
-    margin: 0;	
+body {
+    margin: 0;
     padding: 0;
     color: white;
-    background-color: $other;
+    background-color: $blue;
     box-sizing: border-box;
 }
-h1{
+
+h1 {
     letter-spacing: 0.1em;
     font-family: $title-font;
     font-size: 3em;
 }
-p,h3{
+
+button,
+label,
+input,
+optgroup,
+select,
+textarea,
+p,
+h3 {
     font-family: $p-font;
     font-weight: 200;
     font-size: 1em;
 }
-div{
+
+span {
+    font-family: $p-font;
+    font-weight: 200;
+    font-size: 0.70em;
+}
+
+h6 {
+    font-family: $p-font;
+}
+
+div {
     //margin-bottom: -10px; ---for apple mobile devs. 
 }
-p{
+
+p {
     padding: 0px 15px;
+}
+
+.smaller {
+    font-size: 0.8em;
 }

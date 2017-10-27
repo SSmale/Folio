@@ -1,0 +1,106 @@
+.content {
+    padding: 0px 10px;
+    margin: auto;
+    .institute {
+        position: relative;
+        height: 85px;
+        .logo {
+            width: 80px;
+        }
+        .course {
+            width: 200px;
+            position: absolute;
+            top: 0px;
+            right: 10px;
+            text-align: right;
+        }
+        .year {
+            position: relative;
+            top: -50px;
+            width: 100%;
+            text-align: right;
+            right: 10px;
+        }
+        .grade {
+            border-radius: 50%;
+            background-color: gold;
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            top: -10px;
+            left: 65px;
+            h4 {
+                text-align: center;
+                height: 40px;
+                width: 40px;
+                position: relative;
+                top: -12px;
+            }
+        }
+    }
+    .accordian {
+        padding-top: 15px;
+        display: block;
+        padding-bottom: 30px;
+        .item {
+            background-color: lighten($grey, 30%);
+            margin-top: 15px;
+            color: black;
+            border-radius: 5px;
+            box-shadow: 0px 10px 15px -7px black;
+            .heading {
+                position: relative;
+                padding: 3px;
+                i {
+                    color: white;
+                    position: absolute;
+                    top: 12px;
+                    right: 7px;
+                    cursor: pointer;
+                    transition: 0.3s;
+                }
+            }
+            .body {
+                max-height: 0px;
+                overflow: hidden;
+                transition: 0.7s;
+                z-index: 1;
+                position: relative;
+                p {
+                    height: 100%;
+                    margin-top: 0px;
+                }
+            }
+            .tags {
+                text-align: center;
+                color: white;
+                span {
+                    padding: 6px;
+                    background-color: $gold;
+                    border-radius: 10px;
+                    margin-bottom: 5px;
+                    display: inline-block;
+                }
+                .tech {
+                    background-color: $grey;
+                }
+                .soft {
+                    background-color: $blue;
+                }
+                .job {
+                    background-color: $gold;
+                }
+            }
+            &.open {
+                .heading {
+                    i {
+                        transform: rotateX(180deg);
+                    }
+                }
+                .body {
+                    max-height: 1000px;
+                }
+            }
+        }
+    }
+}

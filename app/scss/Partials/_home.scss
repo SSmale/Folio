@@ -1,61 +1,52 @@
-.home{
-    min-height: calc(100vh - 310px);
+.home {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-gap: 5px;
-    background-color: lighten($text-colour, 5%);
-        
-    .icon-container{   
+    min-height: calc(100vh - 310px);
+    background-color: $grey;
+    .icon-container {
         position: relative;
         height: 100%;
         width: 100%;
         cursor: pointer;
         z-index: 1;
-        
-        .circle{
+        .circle {
             height: 90px;
             width: 90px;
             border-radius: 50%;
-            background-color: rgba($cta-colour,5);
+            background-color: rgba($red, 5);
             position: relative;
             top: calc(50% - 45px);
             left: calc(50% - 45px);
             transition: all 0.3s $backwards;
             box-shadow: 0px 14px 30px -11px #000;
-
-            &.active{
+            &.active {
                 top: 0px;
-                left:0px;
-                height:  100%;
+                left: 0px;
+                height: 100%;
                 width: 100%;
                 border-radius: 0%;
-
-                &~.name{
+                &~.name {
                     visibility: visible;
-                    opacity: 1; 
+                    opacity: 1;
                     transition: all 0.5s ease-in-out;
                 }
-
-                &~.icon{
+                &~.icon {
                     display: none;
                 }
-
             }
-
         }
-
-        .name{
+        .name {
             visibility: hidden;
             position: absolute;
             text-align: center;
             width: 100%;
-            top:calc(50% - 36px);
+            top: calc(50% - 36px);
             margin: 0;
-            opacity: 0;       
+            opacity: 0;
         }
-
-        .icon{
+        .icon {
             display: block;
             position: absolute;
             text-align: center;
@@ -64,7 +55,13 @@
             top: calc(50% - 30px);
             left: calc(50% - 30px);
         }
-        
     }
-    
+    @media screen and (min-width:520px) {
+        min-height: calc(100vh - 500px);
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto 130px auto;
+        .icon-container {
+            grid-row: 2;
+        }
+    }
 }
